@@ -1301,7 +1301,10 @@ li [class^="fa-"], li [class^="glyphicon-"], li [class^="icon-"], li [class*=" f
         -ms-transition-delay: 0;
         transition-delay: 0
     }
-
+.admin{
+    background-color: #cbe8ff;
+    width: 100%;
+}
 .sidebar {
     vertical-align: top;
     position: relative;
@@ -1537,7 +1540,7 @@ li [class^="fa-"], li [class^="glyphicon-"], li [class^="icon-"], li [class*=" f
 }
 
 .page-content-wrapper {
-    min-height: 600px;
+    
     padding: 25px 20px 10px 20px
 }
 
@@ -1821,31 +1824,6 @@ table.dataTable td .itemCheckBox { /*display:inline-table*/
     display: inline-block
 }
 
-.table-scrollable .publish {
-    font-size: 15px;
-    color: #559d01
-}
-
-.table-scrollable .unpublish {
-    font-size: 15px;
-    color: #dc3545
-}
-
-.dataTables_search .btn {
-    padding: 0px 12px;
-    height: 28px;
-    border-radius: 0;
-    font-size: 14px;
-    cursor: pointer
-}
-
-    .dataTables_search .btn i.fa {
-        padding-right: 5px
-    }
-
-.table-group-actions {
-    padding-left: 5px
-}
 
     .table-group-actions:last-child { /*padding:0*/
     }
@@ -1866,60 +1844,7 @@ table.dataTable td .itemCheckBox { /*display:inline-table*/
     margin-bottom: 10px
 }
 
-    .tabbable .nav-tabs .nav-link {
-        margin-bottom: -1px;
-        padding: 0
-    }
-
-        .tabbable .nav-tabs .nav-link a {
-            display: block;
-            padding: 0.5rem 1rem;
-            color: #5b9bd1;
-            font-size: 14px
-        }
-
-        .tabbable .nav-tabs .nav-link:hover {
-            background-color: #eee;
-            border: 1px solid transparent;
-            border-radius: 0
-        }
-
-        .tabbable .nav-tabs .nav-link.active:hover, .tabbable .nav-tabs .nav-link.active {
-            cursor: default;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-bottom-color: transparent;
-            border-top: 3px solid #F3565D
-        }
-
-            .tabbable .nav-tabs .nav-link.active:hover a, .tabbable .nav-tabs .nav-link.active a {
-                color: #555
-            }
-
-.help-block {
-    display: block;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    color: #a94442
-}
-
-.form-body .form-group .form-control {
-    font-size: 14px
-}
-
-.text-area-price-note {
-    display: inline-block;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    color: red;
-    font-style: italic
-}
-
-.fileinput-button {
-    position: relative;
-    overflow: hidden
-}
-
+  
     .fileinput-button input {
         position: absolute;
         top: 0;
