@@ -11,14 +11,15 @@
     <link rel="stylesheet" href="skins/Css/bootstrap.min.css">
   </head>
   <body>
+    <div class="container">
+    <p class="text-center"><h1>Đăng nhập hệ thống</h1></p>
     <div id="login">
-        <h3 class="text-center text-white pt-5">Login form</h3>
         <div class="container">
             <div id="login-row" class="row justify-content-center align-items-center">
                 <div id="login-column" class="col-md-6">
                     <div id="login-box" class="col-md-12">
                         <form id="login-form" class="form" action="" method="post">
-                            <h3 class="text-center text-info">Đăng Nhập Hệ Thống</h3>
+                            <h3 class="text-center text-info">Nhập tên đăng nhập và mật khẩu</h3>
                             <div class="form-group">
                                 <label for="username" class="text-info">Tên đăng nhập:</label><br>
                                 <input type="text" name="username" id="username" class="form-control">
@@ -28,7 +29,9 @@
                                 <input type="password" name="password" id="password" class="form-control">
                             </div>
                             <div class="form-group">
-                                <input type="submit" name="submit" class="btn btn-info btn-md" value="Đăng nhập">
+                                <input type="submit" name="submit" class="btn btn-info btn-md b23w" value="Đăng nhập">
+                                <input type="submit" name="register" class="btn btn-info btn-md b23w" value="Đăng Ký">
+                                <input type="submit" name="register" class="btn btn-info btn-md b23w" value="Thoát">
                             </div>
                            
                         </form>
@@ -37,6 +40,8 @@
             </div>
         </div>
     </div>
+    </div>
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
