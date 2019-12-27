@@ -29,10 +29,10 @@
                 <thead>
                   <tr>
                     <th scope="col" width="30">STT</th>
-                    <th scope="col" width="200">MSV</th>
-                    <th scope="col" width="250">Họ tên</th>
-                    <th scope="col" width="200">Lớp học</th>
-                    <th scope="col">Phone</th>
+                    <th scope="col" width="200">Title</th>
+                    <th scope="col" width="250">Decription</th>
+                    <th scope="col" width="200">Date</th>
+                    <th scope="col">Author</th>
                     <th scope="col" width="130">Sửa</th>
                     <th scope="col" width="130">Xóa</th>
                   </tr>
@@ -40,49 +40,77 @@
                 <tbody>
                   <tr>
                     <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <td>Khai mạc đợt khảo sát...</td>
+                    <td class="decriptionPost">Vừa qua Trường Đại học Thủy lợi đã tổ chức bế giảng khóa học bồi dưỡng tiếng Anh cho công chức thuộc Bộ Nông nghiệp và Phát triển nông thôn năm 2019.</td>
+                    <td>27-12-2019</td>
+                    <td>Văn Đức</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
                   </tr>
                   <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row">2</th>
+                    <td>Khai mạc đợt khảo sát...</td>
+                    <td class="decriptionPost">Vừa qua Trường Đại học Thủy lợi đã tổ chức bế giảng khóa học bồi dưỡng tiếng Anh cho công chức thuộc Bộ Nông nghiệp và Phát triển nông thôn năm 2019.</td>
+                    <td>27-12-2019</td>
+                    <td>Văn Đức</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
                   </tr>
                   <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row">3</th>
+                    <td>Khai mạc đợt khảo sát...</td>
+                    <td class="decriptionPost">Vừa qua Trường Đại học Thủy lợi đã tổ chức bế giảng khóa học bồi dưỡng tiếng Anh cho công chức thuộc Bộ Nông nghiệp và Phát triển nông thôn năm 2019.</td>
+                    <td>27-12-2019</td>
+                    <td>Văn Đức</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
                   </tr>
                   <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row">4</th>
+                    <td>Khai mạc đợt khảo sát...</td>
+                    <td class="decriptionPost">Vừa qua Trường Đại học Thủy lợi đã tổ chức bế giảng khóa học bồi dưỡng tiếng Anh cho công chức thuộc Bộ Nông nghiệp và Phát triển nông thôn năm 2019.</td>
+                    <td>27-12-2019</td>
+                    <td>Văn Đức</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
                   </tr>
                   <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row">5</th>
+                    <td>Khai mạc đợt khảo sát...</td>
+                    <td class="decriptionPost">Vừa qua Trường Đại học Thủy lợi đã tổ chức bế giảng khóa học bồi dưỡng tiếng Anh cho công chức thuộc Bộ Nông nghiệp và Phát triển nông thôn năm 2019.</td>
+                    <td>27-12-2019</td>
+                    <td>Văn Đức</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
                   </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>Khai mạc đợt khảo sát...</td>
+                    <td class="decriptionPost">Vừa qua Trường Đại học Thủy lợi đã tổ chức bế giảng khóa học bồi dưỡng tiếng Anh cho công chức thuộc Bộ Nông nghiệp và Phát triển nông thôn năm 2019.</td>
+                    <td>27-12-2019</td>
+                    <td>Văn Đức</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>Khai mạc đợt khảo sát...</td>
+                    <td class="decriptionPost">Vừa qua Trường Đại học Thủy lợi đã tổ chức bế giảng khóa học bồi dưỡng tiếng Anh cho công chức thuộc Bộ Nông nghiệp và Phát triển nông thôn năm 2019.</td>
+                    <td>27-12-2019</td>
+                    <td>Văn Đức</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">8</th>
+                    <td>Khai mạc đợt khảo sát...</td>
+                    <td class="decriptionPost">Vừa qua Trường Đại học Thủy lợi đã tổ chức bế giảng khóa học bồi dưỡng tiếng Anh cho công chức thuộc Bộ Nông nghiệp và Phát triển nông thôn năm 2019.</td>
+                    <td>27-12-2019</td>
+                    <td>Văn Đức</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
+                  </tr>
+                  
                 </tbody>
               </table>
             </div>

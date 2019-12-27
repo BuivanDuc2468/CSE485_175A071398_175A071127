@@ -20,8 +20,8 @@
                 <i class="fa fa-th"></i>
             </div>
             <div class="details">
-                <div class="number">9242</div>
-                <div class="desc">Giáo Viên</div>
+                <div class="number">10</div>
+                <div class="desc">Phân Lớp</div>
             </div>
             <a href="manageTeacher.php" class="more" id="qlgv">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
         </div>
@@ -32,7 +32,7 @@
                 <i class="fa fa-shopping-cart"></i>
             </div>
             <div class="details">
-                <div class="number">19</div>
+                <div class="number">1900</div>
                 <div class="desc">Sinh Viên</div>
             </div>
             <a href="manageStudent.php" class="more" id="qlsv">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
@@ -56,7 +56,7 @@
                 <i class="fa fa-money"></i>
             </div>
             <div class="details">
-                <div class="number">5</div>
+                <div class="number">20</div>
                 <div class="desc">Lớp học</div>
             </div>
             <a href="manageClass.php" class="more" id="qlcls">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>

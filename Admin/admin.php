@@ -29,59 +29,137 @@
                 <thead>
                   <tr>
                     <th scope="col">STT</th>
-                    <th scope="col">MSV</th>
-                    <th scope="col">Họ tên</th>
-                    <th scope="col">Lớp học</th>
+                    <th scope="col">Mã Giáo Viên</th>
+                    <th scope="col">Tên Giáo Viên</th>
+                    <th scope="col">Ngày Sinh</th>
                     <th scope="col">Phone</th>
-                    <th scope="col">Sửa</th>
-                    <th scope="col">Xóa</th>
+                    <th scope="col">Giới tính</th>
+                    <th scope="col">Trình độ</th>
+                    <th scope="col" width="130">Sửa</th>
+                    <th scope="col" width="130">Xóa</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                <tr>
                     <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <td>123</td>
+                    <td>Kiều Tuấn Dũng</td>
+                    <td>01/01/1980</td>
+                    <td>0978891268</td>
+                    <td>nam</td>
+                    <td>Thạc Sĩ</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
                   </tr>
                   <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row">2</th>
+                    <td>123</td>
+                    <td>Kiều Tuấn Dũng</td>
+                    <td>01/01/1980</td>
+                    <td>0978891268</td>
+                    <td>nam</td>
+                    <td>Thạc Sĩ</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
                   </tr>
                   <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row">2</th>
+                    <td>123</td>
+                    <td>Kiều Tuấn Dũng</td>
+                    <td>01/01/1980</td>
+                    <td>0978891268</td>
+                    <td>nam</td>
+                    <td>Thạc Sĩ</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
                   </tr>
                   <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row">3</th>
+                    <td>123</td>
+                    <td>Kiều Tuấn Dũng</td>
+                    <td>01/01/1980</td>
+                    <td>0978891268</td>
+                    <td>nam</td>
+                    <td>Thạc Sĩ</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
                   </tr>
                   <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row">4</th>
+                    <td>123</td>
+                    <td>Kiều Tuấn Dũng</td>
+                    <td>01/01/1980</td>
+                    <td>0978891268</td>
+                    <td>nam</td>
+                    <td>Thạc Sĩ</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>123</td>
+                    <td>Kiều Tuấn Dũng</td>
+                    <td>01/01/1980</td>
+                    <td>0978891268</td>
+                    <td>nam</td>
+                    <td>Thạc Sĩ</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>123</td>
+                    <td>Kiều Tuấn Dũng</td>
+                    <td>01/01/1980</td>
+                    <td>0978891268</td>
+                    <td>nam</td>
+                    <td>Thạc Sĩ</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>123</td>
+                    <td>Kiều Tuấn Dũng</td>
+                    <td>01/01/1980</td>
+                    <td>0978891268</td>
+                    <td>nam</td>
+                    <td>Thạc Sĩ</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">8</th>
+                    <td>123</td>
+                    <td>Kiều Tuấn Dũng</td>
+                    <td>01/01/1980</td>
+                    <td>0978891268</td>
+                    <td>nam</td>
+                    <td>Thạc Sĩ</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">10</th>
+                    <td>123</td>
+                    <td>Kiều Tuấn Dũng</td>
+                    <td>01/01/1980</td>
+                    <td>0978891268</td>
+                    <td>nam</td>
+                    <td>Thạc Sĩ</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">11</th>
+                    <td>123</td>
+                    <td>Kiều Tuấn Dũng</td>
+                    <td>01/01/1980</td>
+                    <td>0978891268</td>
+                    <td>nam</td>
+                    <td>Thạc Sĩ</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
                   </tr>
                 </tbody>
               </table>

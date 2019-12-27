@@ -13,81 +13,133 @@
   </head>
   <body>
     <div class="admin">
-
     <div class="container">
-   
+    <?php
+        include 'header-admin.php';
+    ?>
        <?php
         include 'nav.php';
         ?>
        </div>
         <div class="main">
           <div class="content">
-            <!-- =================teacher=========== -->
-            <div id="content-teacher">
-            <p class="text-center dsgv">Danh sách sinh viên</p>
+            <div id="content_Post">
+            <p class="text-center dsgv">Phân Lớp Cho giáo Viên</p>
               <table class="table table-bordered">
                 <thead>
                   <tr>
-                    <th scope="col" width="30">STT</th>
-                    <th scope="col" width="200">MSV</th>
-                    <th scope="col" width="250">Họ tên</th>
-                    <th scope="col" width="200">Lớp học</th>
-                    <th scope="col">Phone</th>
-                    <th scope="col" width="130">Sửa</th>
-                    <th scope="col" width="130">Xóa</th>
+                    <th scope="col">STT</th>
+                    <th scope="col">Mã Giáo Viên</th>
+                    <th scope="col">Tên Giáo Viên</th>
+                    <th scope="col">Môn Học</th>
+                    <th scope="col">Lớp học</th>
+                    <th scope="col">Sửa</th>
+                    <th scope="col">Xóa</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                <tr>
                     <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <td>123</td>
+                    <td>Kiều Tuấn Dũng</td>
+                    <td>Công Nghệ Web</td>
+                    <td>59Th1</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
                   </tr>
                   <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row">2</th>
+                    <td>123</td>
+                    <td>Kiều Tuấn Dũng</td>
+                    <td>Công Nghệ Web</td>
+                    <td>59Th1</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
                   </tr>
                   <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row">2</th>
+                    <td>123</td>
+                    <td>Kiều Tuấn Dũng</td>
+                    <td>Công Nghệ Web</td>
+                    <td>59Th1</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
                   </tr>
                   <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row">3</th>
+                    <td>123</td>
+                    <td>Kiều Tuấn Dũng</td>
+                    <td>Công Nghệ Web</td>
+                    <td>59Th1</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
                   </tr>
                   <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row">4</th>
+                    <td>123</td>
+                    <td>Kiều Tuấn Dũng</td>
+                    <td>Công Nghệ Web</td>
+                    <td>59Th1</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>123</td>
+                    <td>Kiều Tuấn Dũng</td>
+                    <td>Công Nghệ Web</td>
+                    <td>59Th1</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>123</td>
+                    <td>Kiều Tuấn Dũng</td>
+                    <td>Công Nghệ Web</td>
+                    <td>59Th1</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>123</td>
+                    <td>Kiều Tuấn Dũng</td>
+                    <td>Công Nghệ Web</td>
+                    <td>59Th1</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">8</th>
+                    <td>123</td>
+                    <td>Kiều Tuấn Dũng</td>
+                    <td>Công Nghệ Web</td>
+                    <td>59Th1</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">10</th>
+                    <td>123</td>
+                    <td>Kiều Tuấn Dũng</td>
+                    <td>Công Nghệ Web</td>
+                    <td>59Th1</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">11</th>
+                    <td>123</td>
+                    <td>Kiều Tuấn Dũng</td>
+                    <td>Công Nghệ Web</td>
+                    <td>59Th1</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
                   </tr>
                 </tbody>
               </table>
             </div>
-           
-
           </div>
         </div>
          

@@ -393,3 +393,7 @@ img {
 .detail-wrapper{
 	margin:30px 0;
 }
+.decriptionPost {
+	height: 50px;
+	overflow: hidden;
+}

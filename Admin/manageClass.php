@@ -29,10 +29,10 @@
                 <thead>
                   <tr>
                     <th scope="col" width="30">STT</th>
-                    <th scope="col" width="200">MSV</th>
-                    <th scope="col" width="250">Họ tên</th>
-                    <th scope="col" width="200">Lớp học</th>
-                    <th scope="col">Phone</th>
+                    <th scope="col" width="270">Tên lớp</th>
+                    <th scope="col" width="200">Giáo Viên</th>
+                    <th scope="col" width="100">Số lượng</th>
+                    <th scope="col">Chú thích</th>
                     <th scope="col" width="130">Sửa</th>
                     <th scope="col" width="130">Xóa</th>
                   </tr>
@@ -40,49 +40,77 @@
                 <tbody>
                   <tr>
                     <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <td>Cơ sở Dữ liệu - 59TH1</td>
+                    <td>Phùng Duy Hảo</td>
+                    <td>50</td>
+                    <td>Quá trình 50%, kết thúc 50%</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
                   </tr>
                   <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row">2</th>
+                    <td>Cơ sở Dữ liệu - 59TH1</td>
+                    <td>Phùng Duy Hảo</td>
+                    <td>50</td>
+                    <td>Quá trình 50%, kết thúc 50%</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
                   </tr>
                   <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row">3</th>
+                    <td>Cơ sở Dữ liệu - 59TH1</td>
+                    <td>Phùng Duy Hảo</td>
+                    <td>50</td>
+                    <td>Quá trình 50%, kết thúc 50%</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
                   </tr>
                   <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row">4</th>
+                    <td>Cơ sở Dữ liệu - 59TH1</td>
+                    <td>Phùng Duy Hảo</td>
+                    <td>50</td>
+                    <td>Quá trình 50%, kết thúc 50%</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
                   </tr>
                   <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row">5</th>
+                    <td>Cơ sở Dữ liệu - 59TH1</td>
+                    <td>Phùng Duy Hảo</td>
+                    <td>50</td>
+                    <td>Quá trình 50%, kết thúc 50%</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
                   </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>Cơ sở Dữ liệu - 59TH1</td>
+                    <td>Phùng Duy Hảo</td>
+                    <td>50</td>
+                    <td>Quá trình 50%, kết thúc 50%</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>Cơ sở Dữ liệu - 59TH1</td>
+                    <td>Phùng Duy Hảo</td>
+                    <td>50</td>
+                    <td>Quá trình 50%, kết thúc 50%</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">8</th>
+                    <td>Cơ sở Dữ liệu - 59TH1</td>
+                    <td>Phùng Duy Hảo</td>
+                    <td>50</td>
+                    <td>Quá trình 50%, kết thúc 50%</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
+                  </tr>
+                  
                 </tbody>
               </table>
             </div>

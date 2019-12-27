@@ -31,8 +31,9 @@
                     <th scope="col" width="30">STT</th>
                     <th scope="col" width="200">MSV</th>
                     <th scope="col" width="250">Họ tên</th>
-                    <th scope="col" width="200">Lớp học</th>
-                    <th scope="col">Phone</th>
+                    <th scope="col" width="200">Giói tính</th>
+                    <th scope="col">Số điện thoại</th>
+                    <th scope="col">Lớp</th>
                     <th scope="col" width="130">Sửa</th>
                     <th scope="col" width="130">Xóa</th>
                   </tr>
@@ -40,49 +41,135 @@
                 <tbody>
                   <tr>
                     <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <td>175A071398</td>
+                    <td>Bùi Văn Đức</td>
+                    <td>Nam</td>
+                    <td>0963798280</td>
+                    <td>59TH1</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
                   </tr>
                   <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row">2</th>
+                    <td>175A071398</td>
+                    <td>Bùi Văn Đức</td>
+                    <td>Nam</td>
+                    <td>0963798280</td>
+                    <td>59TH1</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
                   </tr>
                   <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row">3</th>
+                    <td>175A071398</td>
+                    <td>Bùi Văn Đức</td>
+                    <td>Nam</td>
+                    <td>0963798280</td>
+                    <td>59TH1</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
                   </tr>
                   <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row">4</th>
+                    <td>175A071398</td>
+                    <td>Bùi Văn Đức</td>
+                    <td>Nam</td>
+                    <td>0963798280</td>
+                    <td>59TH1</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
                   </tr>
                   <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row">5</th>
+                    <td>175A071398</td>
+                    <td>Bùi Văn Đức</td>
+                    <td>Nam</td>
+                    <td>0963798280</td>
+                    <td>59TH1</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
                   </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>175A071398</td>
+                    <td>Bùi Văn Đức</td>
+                    <td>Nam</td>
+                    <td>0963798280</td>
+                    <td>59TH1</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>175A071398</td>
+                    <td>Bùi Văn Đức</td>
+                    <td>Nam</td>
+                    <td>0963798280</td>
+                    <td>59TH1</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">8</th>
+                    <td>175A071398</td>
+                    <td>Bùi Văn Đức</td>
+                    <td>Nam</td>
+                    <td>0963798280</td>
+                    <td>59TH1</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">9</th>
+                    <td>175A071398</td>
+                    <td>Bùi Văn Đức</td>
+                    <td>Nam</td>
+                    <td>0963798280</td>
+                    <td>59TH1</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">10</th>
+                    <td>175A071398</td>
+                    <td>Bùi Văn Đức</td>
+                    <td>Nam</td>
+                    <td>0963798280</td>
+                    <td>59TH1</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">11</th>
+                    <td>175A071398</td>
+                    <td>Bùi Văn Đức</td>
+                    <td>Nam</td>
+                    <td>0963798280</td>
+                    <td>59TH1</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">12</th>
+                    <td>175A071398</td>
+                    <td>Bùi Văn Đức</td>
+                    <td>Nam</td>
+                    <td>0963798280</td>
+                    <td>59TH1</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">13</th>
+                    <td>175A071398</td>
+                    <td>Bùi Văn Đức</td>
+                    <td>Nam</td>
+                    <td>0963798280</td>
+                    <td>59TH1</td>
+                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
+                  </tr>
+                  
                 </tbody>
               </table>
             </div>
