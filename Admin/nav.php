@@ -23,7 +23,7 @@
                 <div class="number">9242</div>
                 <div class="desc">Giáo Viên</div>
             </div>
-            <a href="#" class="more" id="qlgv">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
+            <a href="manageTeacher.php" class="more" id="qlgv">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
     <div class="col-lg-3 col-md-3 col-sm-6 col-12">
@@ -35,7 +35,7 @@
                 <div class="number">19</div>
                 <div class="desc">Sinh Viên</div>
             </div>
-            <a href="#" class="more" id="qlsv">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
+            <a href="manageStudent.php" class="more" id="qlsv">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
     <div class="col-lg-3 col-md-3 col-sm-6 col-12">
@@ -47,7 +47,7 @@
                 <div class="number">204</div>
                 <div class="desc">Bài viết</div>
             </div>
-            <a href="#" class="more" id="qlpst">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
+            <a href="Postmanage.php" class="more" id="qlpst">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
     <div class="col-lg-3 col-md-3 col-sm-6 col-12">
@@ -59,7 +59,7 @@
                 <div class="number">5</div>
                 <div class="desc">Lớp học</div>
             </div>
-            <a href="#" class="more" id="qlcls">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
+            <a href="manageClass.php" class="more" id="qlcls">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
 </div>

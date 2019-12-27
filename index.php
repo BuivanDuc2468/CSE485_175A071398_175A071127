@@ -22,7 +22,7 @@
 		include 'slide.php';
   ?>
   <?php
-    include ("ctiettt.php");
+    include ("mainIndex.php");
   ?>
     <?php
         include 'footer.php';

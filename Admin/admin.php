@@ -13,89 +13,21 @@
   </head>
   <body>
     <div class="admin">
-
     <div class="container">
     <?php
         include 'header-admin.php';
     ?>
-      
        <?php
         include 'nav.php';
         ?>
        </div>
         <div class="main">
           <div class="content">
-            <!-- =================teacher=========== -->
-            <div id="content-teacher">
+            <div id="content_Post">
             <p class="text-center dsgv">Danh sách giáo viên</p>
               <table class="table table-bordered">
                 <thead>
                   <tr>
-                    <th scope="col" width="30">STT</th>
-                    <th scope="col" width="200">MSV</th>
-                    <th scope="col" width="250">Họ tên</th>
-                    <th scope="col" width="200">Lớp học</th>
-                    <th scope="col">Phone</th>
-                    <th scope="col" width="130">Sửa</th>
-                    <th scope="col" width="130">Xóa</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-              <!-- ========!end=================== -->
-              <!-- =================student=========== -->
-            <div id="content_student">
-            <p class="text-center dsgv">Danh sách sinh viên</p>
-              <table class="table table-bordered">
-                <thead>
-                  <tr>
                     <th scope="col">STT</th>
                     <th scope="col">MSV</th>
                     <th scope="col">Họ tên</th>
@@ -154,135 +86,7 @@
                 </tbody>
               </table>
             </div>
-            <!-- =================Post=========== -->
-            <div id="content_Post">
-            <p class="text-center dsgv">Quản lý bài viết</p>
-              <table class="table table-bordered">
-                <thead>
-                  <tr>
-                    <th scope="col">STT</th>
-                    <th scope="col">MSV</th>
-                    <th scope="col">Họ tên</th>
-                    <th scope="col">Lớp học</th>
-                    <th scope="col">Phone</th>
-                    <th scope="col">Sửa</th>
-                    <th scope="col">Xóa</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <!-- =================teacher=========== -->
-            <div id="content-class">
-            <p class="text-center dsgv">Danh sách Lớp học</p>
-              <table class="table table-bordered">
-                <thead>
-                  <tr>
-                    <th scope="col" width="30">STT</th>
-                    <th scope="col" width="200">MSV</th>
-                    <th scope="col" width="250">Họ tên</th>
-                    <th scope="col" width="200">Lớp học</th>
-                    <th scope="col">Phone</th>
-                    <th scope="col" width="130">Sửa</th>
-                    <th scope="col" width="130">Xóa</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-              <!-- ========!end=================== -->
+            
 
           </div>
         </div>
