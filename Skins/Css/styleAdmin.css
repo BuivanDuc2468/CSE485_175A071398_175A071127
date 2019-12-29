@@ -894,7 +894,7 @@ li [class^="fa-"], li [class^="glyphicon-"], li [class^="icon-"], li [class*=" f
 }
 
 .page-header {
-    background-color: #2D5F8B;
+    background-color: #ec2d2d;
     margin: 2px 0 0
 }
 
@@ -912,7 +912,7 @@ li [class^="fa-"], li [class^="glyphicon-"], li [class^="icon-"], li [class*=" f
     height: 46px;
     padding-left: 20px;
     padding-right: 20px;
-    line-height: 45px
+    line-height: 45px;
 }
 
     .page-header .logo img {
@@ -955,7 +955,7 @@ li [class^="fa-"], li [class^="glyphicon-"], li [class^="icon-"], li [class*=" f
         font-size: 14px;
         font-weight: 400;
         padding: 13px 13px;
-        color: #b6d0e7;
+        color: #000000;
         line-height: 20px;
         display: block
     }
@@ -1022,7 +1022,6 @@ li [class^="fa-"], li [class^="glyphicon-"], li [class^="icon-"], li [class*=" f
 
 .top-menu {
     flex: 0 0 33.33333%;
-    max-width: 33.33333%
 }
 
 @media (max-width: 992px) {
@@ -1208,7 +1207,9 @@ li [class^="fa-"], li [class^="glyphicon-"], li [class^="icon-"], li [class*=" f
         .top-menu > ul > li.dropdown-language a {
             padding: 14px 6px 12px 8px
         }
-
+.admin a{
+    color:wheat;
+}
         .top-menu > ul > li.dropdown-language .img-language {
             float: left;
             margin-top: -5px;
@@ -1304,6 +1305,7 @@ li [class^="fa-"], li [class^="glyphicon-"], li [class^="icon-"], li [class*=" f
 .admin{
     background-color: #cbe8ff;
     width: 100%;
+    padding: 30px 0;
 }
 .sidebar {
     vertical-align: top;

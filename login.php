@@ -18,21 +18,19 @@
         <div class="card card-signin my-5">
           <div class="card-body">
             <h5 class="card-title text-center">Đăng Nhập Hệ Thống</h5>
-            <form class="form-signin">
+            <form class="form-signin" method="POST" action="ProcessLogin.php">
 
               <div class="form-label-group">
-                <input type="email" class="form-control" placeholder="Email address">
+                <input type="email" class="form-control" id="defaultForm-email" name="email" placeholder="Email address" required autofocus>
               </div>
               <div class="form-label-group">
-                <input type="password" class="form-control" placeholder="Password">
+                <input type="password" class="form-control" id="defaultForm-password" name="pass" placeholder="Password" required>
               </div>
-
-              
-              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Đăng Nhập</button>
-              <hr class="my-4">
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" id="btnLogin">Đăng nhập</button>
+              <hr class="my-4">    
+            </form>
               <button class="btn btn-lg btn-primary btn-block text-uppercase" type="button"><a href="registerUsers.php">Đăng ký</a></button>
               <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Quên Mật Khẩu</button>
-            </form>
           </div>
         </div>
       </div>
@@ -44,5 +42,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="Skins/JS/bootstrap.min.js" ></script>
+    <script src="Skins/Js/jqr.js"></script>
   </body>
 </html>

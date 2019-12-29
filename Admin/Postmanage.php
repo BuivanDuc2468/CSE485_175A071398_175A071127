@@ -12,13 +12,14 @@
     <link rel="stylesheet" href="../Skins/Css/bootstrap.min.css">
   </head>
   <body>
+        <?php
+        include 'nav.php';
+        ?>
     <div class="admin">
 
     <div class="container">
    
-       <?php
-        include 'nav.php';
-        ?>
+      
        </div>
         <div class="main">
           <div class="content">

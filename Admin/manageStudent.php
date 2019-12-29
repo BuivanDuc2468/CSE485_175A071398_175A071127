@@ -12,13 +12,18 @@
     <link rel="stylesheet" href="../Skins/Css/bootstrap.min.css">
   </head>
   <body>
+    <?php
+        include 'header-admin.php';
+    ?>
+    <?php
+      require("../Connect.php");
+      $sql = "Select * from Student,ClassOne where ClassOne.ClassID = Student.ClassID";
+      mysqli_set_charset($conn,'UTF8');
+      $result = mysqli_query($conn,$sql);
+    ?>
+      
     <div class="admin">
-
     <div class="container">
-   
-       <?php
-        include 'nav.php';
-        ?>
        </div>
         <div class="main">
           <div class="content">
@@ -31,150 +36,39 @@
                     <th scope="col" width="30">STT</th>
                     <th scope="col" width="200">MSV</th>
                     <th scope="col" width="250">Họ tên</th>
-                    <th scope="col" width="200">Giói tính</th>
+                    <th scope="col" width="200">Giới tính</th>
                     <th scope="col">Số điện thoại</th>
                     <th scope="col">Lớp</th>
-                    <th scope="col" width="130">Sửa</th>
-                    <th scope="col" width="130">Xóa</th>
+                    <th scope="col" width="30">Sửa</th>
+                    <th scope="col" width="30">Xóa</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>175A071398</td>
-                    <td>Bùi Văn Đức</td>
-                    <td>Nam</td>
-                    <td>0963798280</td>
-                    <td>59TH1</td>
-                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
-                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>175A071398</td>
-                    <td>Bùi Văn Đức</td>
-                    <td>Nam</td>
-                    <td>0963798280</td>
-                    <td>59TH1</td>
-                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
-                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>175A071398</td>
-                    <td>Bùi Văn Đức</td>
-                    <td>Nam</td>
-                    <td>0963798280</td>
-                    <td>59TH1</td>
-                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
-                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>175A071398</td>
-                    <td>Bùi Văn Đức</td>
-                    <td>Nam</td>
-                    <td>0963798280</td>
-                    <td>59TH1</td>
-                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
-                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">5</th>
-                    <td>175A071398</td>
-                    <td>Bùi Văn Đức</td>
-                    <td>Nam</td>
-                    <td>0963798280</td>
-                    <td>59TH1</td>
-                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
-                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">6</th>
-                    <td>175A071398</td>
-                    <td>Bùi Văn Đức</td>
-                    <td>Nam</td>
-                    <td>0963798280</td>
-                    <td>59TH1</td>
-                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
-                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">7</th>
-                    <td>175A071398</td>
-                    <td>Bùi Văn Đức</td>
-                    <td>Nam</td>
-                    <td>0963798280</td>
-                    <td>59TH1</td>
-                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
-                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">8</th>
-                    <td>175A071398</td>
-                    <td>Bùi Văn Đức</td>
-                    <td>Nam</td>
-                    <td>0963798280</td>
-                    <td>59TH1</td>
-                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
-                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">9</th>
-                    <td>175A071398</td>
-                    <td>Bùi Văn Đức</td>
-                    <td>Nam</td>
-                    <td>0963798280</td>
-                    <td>59TH1</td>
-                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
-                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">10</th>
-                    <td>175A071398</td>
-                    <td>Bùi Văn Đức</td>
-                    <td>Nam</td>
-                    <td>0963798280</td>
-                    <td>59TH1</td>
-                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
-                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">11</th>
-                    <td>175A071398</td>
-                    <td>Bùi Văn Đức</td>
-                    <td>Nam</td>
-                    <td>0963798280</td>
-                    <td>59TH1</td>
-                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
-                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">12</th>
-                    <td>175A071398</td>
-                    <td>Bùi Văn Đức</td>
-                    <td>Nam</td>
-                    <td>0963798280</td>
-                    <td>59TH1</td>
-                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
-                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">13</th>
-                    <td>175A071398</td>
-                    <td>Bùi Văn Đức</td>
-                    <td>Nam</td>
-                    <td>0963798280</td>
-                    <td>59TH1</td>
-                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
-                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
-                  </tr>
+                  <?php
+                  $i =1;
+                  if(mysqli_num_rows($result)>0){
+                      while($row = mysqli_fetch_assoc($result)){
+                    echo '<tr>';
+                    echo '<th scope="row">'.$i.'</th>';
+                    echo '<td>'.$row['StudentCode'].'</td>';
+                    echo '<td>'.$row['name'].'</td>';
+                    echo '<td>'.$row['sex'].'</td>';
+                    echo '<td>'.$row['phone'].'</td>';
+                    echo '<td>'.$row['ClassName'].'</td>';
+                    echo '<td><a href="editStudent.php?id='.$row['StudentCode'].'"><img src="../Skins/Image/edit.gif" alt=""></a></td>';
+                    echo '<td><a href="deleteStudent.php?id='.$row['StudentCode'].'"><img src="../Skins/Image/deleted.jpg" alt=""></a></td>';
+                    echo'</tr>';
+                    $i++;
+                    }
+                  }
+
+                  mysqli_close($conn);
+                  ?>
+                  
                   
                 </tbody>
               </table>
             </div>
-           
-
           </div>
         </div>
          

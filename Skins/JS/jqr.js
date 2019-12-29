@@ -115,4 +115,25 @@ js_window.scroll(function() {
     
     
 
-})(jQuery);
+})
+//$(document).ready(function(){
+    //$("#btnLogin").click(function(){
+        //var inputEmail = $("#defaultForm-email").val();
+        //var inputPassword = $("#defaultForm-password").val();
+        
+        // $.ajax({
+        //     type:'POST',
+           
+        //     url: './ajaxProcessLogin.php',
+        //     data:{'Email1':inputEmail,'pass':inputPassword},
+        //     success:function(data){
+               
+        //     },
+        //     error: function(data){
+               
+        //     }
+            
+          
+        // })
+    //})
+//})

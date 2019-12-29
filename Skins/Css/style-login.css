@@ -135,3 +135,11 @@
   a {
     color: white !important;
 }
+input#btnLogin {
+  width: 100%;
+  background: #007bff;
+  padding: 5px;
+  color: #fff7ff;
+  font-size: 24px;
+  border-radius: 22px;
+}

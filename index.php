@@ -1,18 +1,17 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Diem Danh Sinh Vien</title>
+    <title>Home</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="Skins/Css/style.css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="skins/Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Skins/Css/bootstrap.min.css">
   </head>
   <body>
     <?php
-        
         include 'header.php';
         include 'nav-header.php';
     ?>

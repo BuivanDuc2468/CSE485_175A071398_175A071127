@@ -1,26 +1,87 @@
-	<div id="header">
-	<div class="row">
-			<div class="col-md-5 text-right">
-				<div id="brand">
-					<a href="index.php">
-					<img class="brand" src="../Skins/Image/logo.png" style="float:left;">
-					</a>
-				</div>
+<header id="header" class="page-header">
+	<div class="container-fluid d-flex-wrap">
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="logo col-md-3">
+				<a href="/">
+					<img src="../Skins/Image/logo.png" alt="">
+				</a>
 			</div>
-			<div class="col-md-7">
-				<div class="row">
-					<div class="col-md-8 search-1">
-						<div class="active-pink-3 active-pink-4 mb-4">
-						  <input class="form-control" type="text" placeholder="Search" aria-label="Search"></div>
-						  
-					</div>
-					<div class="col-md-4 tk">
-					<input type="submit" name="search" class="btn btn-info btn-md" value="Tìm kiếm">
-					<button type="button" class="btn btn-primary"><a href="../login.php" class="cl-white">Đăng Xuất</a></button>
-					</div>
-				</div>
-				
+			<div class="hor-menu nav-desktop col-md-6">
+				<ul class="navmenu">
+					<li class="item active">
+						<a href="admin.php">Home</a>
+					</li>
+					<li class="item">
+						<a href="javascript:;">Quản lý <i class="fa fa-angle-down"></i></a>
+						<ul class="sub-menu">
+							
+							<li><a href="manageTeacher.php"><i class="fa fa-folder"></i>Giáo Viên</a></li>
+							
+							<li><a href="manageStudent.php"><i class="fa fa-folder"></i>Sinh Viên</a></li>
+							
+							<li><a href="manageClass.php"><i class="fa fa-folder"></i>Lóp học</a></li>
+							
+							<li><a href="Postmanage.php"><i class="fa fa-th"></i>Bài Viết</a></li>
+							
+							<li><a href="class-assignment.php"><i class="fa fa-folder"></i>Phân công lớp</a></li>
+							
+							<li><a href="/CP/ModNews/Index.aspx"><i class="fa fa-list-alt"></i>Lớp học - môn học</a></li>
+							
+							<li><a href="/CP/ModComment/Index.aspx"><i class="fa fa-th"></i>Lịch thi</a></li>
+							
+						</ul>
+					</li>
+					<li class="item">
+						<a class="a-open-down"></a>
+						<a href="javascript:;">Thống kê<i class="fa fa-angle-down"></i></a>
+						<ul class="sub-menu">
+							<li><a href="/CP/ModSubscribe/Index.aspx"><i class="fa fa-th" aria-hidden="true"></i>Danh sách Giáo viên</a></li>
+							<li><a href="/CP/ModSubscribe2/Index.aspx"><i class="fa fa-eye" aria-hidden="true"></i>Danh sách lớp học</a></li>
+							<li><a href="/CP/ModSubscribe3/Index.aspx"><i class="fa fa-eye" aria-hidden="true"></i>Danh sách môn học</a></li>
+						</ul>
+					</li>
+					
+					<li class="item">
+						<a class="a-open-down"></a>
+						<a href="javascript:;">Hệ thống <i class="fa fa-angle-down"></i></a>
+						<ul class="sub-menu">
+							<li><a href="/CP/SysRole/Index.aspx"><i class="fa fa-users"></i>Nhóm người sử dụng</a></li>
+							<li><a href="/CP/SysUser/Index.aspx"><i class="fa fa-user"></i>Người sử dụng</a></li>
+							
+						</ul>
+					</li>
+				</ul>
 			</div>
+			<div class="top-menu col-md-2">
+				<ul class="nav">
+					<li class="dropdown-user">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+							<img src="../skins/image/avatar3_small.jpg" class="userimg" alt="">
+							<span class="username">admin</span>
+						</a>
+						<ul class="dropdown-menu">
+							
+							<li>
+								<a href="InfoUser.php?ID=1">
+									<i class="icon-user"></i>Thông tin tài khoản
+								</a>
+							</li>
+							<li>
+								<a href="/CP/UserChangePass.aspx">
+									<i class="icon-lock"></i>Đổi mật khẩu
+								</a>
+							</li>
+							<li>
+								<a href="../login.php">
+									<i class="icon-key"></i>Thoát
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</div>
-</div>
+</header>
 

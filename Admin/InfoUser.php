@@ -26,43 +26,37 @@
           <div class="content">
             <!-- =================teacher=========== -->
             <div id="content-teacher">
-            <p class="text-center dsgv">Danh sách Lớp học</p>
+            <p class="text-center dsgv">Thông tin tài khoản</p>
               <table class="table table-bordered">
                 <thead>
                   <tr>
-                    <th scope="col" width="30">STT</th>
-                    <th scope="col" width="170">Tên lớp</th>
-                    <th scope="col" width="270">Môn Học</th>
-                    <th scope="col" width="200">Giáo Viên</th>
-                    <th scope="col" width="100">Số lượng</th>
-                    <th scope="col">Chú thích</th>
-                    <th scope="col" width="30">Sửa</th>
-                    <th scope="col" width="30">Xóa</th>
+                    <th scope="col">ID</th>
+                    <th scope="col">Tên người dùng</th>
+                    <th scope="col" width="270">Email</th>
+                    <th scope="col" width="200">Số điện thoại</th>
+                    <th scope="col" width="130">Sửa</th>
+                    <th scope="col" width="130">Xóa</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">1</th>
-                    <td>59TH1</td>
-                    <td>Cơ sở Dữ liệu</td>
-                    <td>Phùng Duy Hảo</td>
-                    <td>50</td>
-                    <td>Quá trình 50%, kết thúc 50%</td>
+                    <td>1</td>
+                    <td>Bùi Văn Đức</td>
+                    <td>bduc0248@gmail.com</td>
+                    <td>0963798280</td>
                     <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
+                    
                     <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
+                    
                   </tr>
-                  
                 </tbody>
               </table>
             </div>
-           
-
           </div>
         </div>
-         
       <?php
         include("footer.php");
-    ?>
+      ?>
     </div>
   
         

@@ -12,131 +12,57 @@
     <link rel="stylesheet" href="../Skins/Css/bootstrap.min.css">
   </head>
   <body>
-    <div class="admin">
-    <div class="container">
+  <?php
+      require("../Connect.php");
+      $sql = "Select * from teacher";
+      mysqli_set_charset($conn,'UTF8');
+      $result = mysqli_query($conn,$sql);
+    ?>
     <?php
         include 'header-admin.php';
     ?>
-       <?php
-        include 'nav.php';
-        ?>
+    <div class="admin">
+    <div class="container">
+    
+      
        </div>
         <div class="main">
           <div class="content">
             <div id="content_Post">
-            <p class="text-center dsgv">Phân Lớp Cho giáo Viên</p>
+            <p class="text-center dsgv">Danh sách giáo Viên</p>
               <table class="table table-bordered">
                 <thead>
                   <tr>
-                    <th scope="col">STT</th>
+                    <th scope="col" width="30">STT</th>
                     <th scope="col">Mã Giáo Viên</th>
                     <th scope="col">Tên Giáo Viên</th>
-                    <th scope="col">Môn Học</th>
-                    <th scope="col">Lớp học</th>
-                    <th scope="col">Sửa</th>
-                    <th scope="col">Xóa</th>
+                    <th scope="col">Số điện thoại</th>
+                    <th scope="col">Giới tính</th>
+                    <th scope="col">Trình độ</th>
+                    <th scope="col" width="30">Sửa</th>
+                    <th scope="col" width="30">Xóa</th>
                   </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>123</td>
-                    <td>Kiều Tuấn Dũng</td>
-                    <td>Công Nghệ Web</td>
-                    <td>59Th1</td>
-                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
-                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>123</td>
-                    <td>Kiều Tuấn Dũng</td>
-                    <td>Công Nghệ Web</td>
-                    <td>59Th1</td>
-                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
-                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>123</td>
-                    <td>Kiều Tuấn Dũng</td>
-                    <td>Công Nghệ Web</td>
-                    <td>59Th1</td>
-                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
-                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>123</td>
-                    <td>Kiều Tuấn Dũng</td>
-                    <td>Công Nghệ Web</td>
-                    <td>59Th1</td>
-                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
-                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>123</td>
-                    <td>Kiều Tuấn Dũng</td>
-                    <td>Công Nghệ Web</td>
-                    <td>59Th1</td>
-                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
-                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">5</th>
-                    <td>123</td>
-                    <td>Kiều Tuấn Dũng</td>
-                    <td>Công Nghệ Web</td>
-                    <td>59Th1</td>
-                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
-                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">6</th>
-                    <td>123</td>
-                    <td>Kiều Tuấn Dũng</td>
-                    <td>Công Nghệ Web</td>
-                    <td>59Th1</td>
-                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
-                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">7</th>
-                    <td>123</td>
-                    <td>Kiều Tuấn Dũng</td>
-                    <td>Công Nghệ Web</td>
-                    <td>59Th1</td>
-                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
-                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">8</th>
-                    <td>123</td>
-                    <td>Kiều Tuấn Dũng</td>
-                    <td>Công Nghệ Web</td>
-                    <td>59Th1</td>
-                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
-                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">10</th>
-                    <td>123</td>
-                    <td>Kiều Tuấn Dũng</td>
-                    <td>Công Nghệ Web</td>
-                    <td>59Th1</td>
-                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
-                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">11</th>
-                    <td>123</td>
-                    <td>Kiều Tuấn Dũng</td>
-                    <td>Công Nghệ Web</td>
-                    <td>59Th1</td>
-                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
-                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
-                  </tr>
+                <?php
+                  $i =1;
+                  if(mysqli_num_rows($result)>0){
+                      while($row = mysqli_fetch_assoc($result)){
+                    echo '<tr>';
+                    echo '<th scope="row">'.$i.'</th>';
+                    echo '<td>'.$row['teacherCode'].'</td>';
+                    echo '<td>'.$row['teacherName'].'</td>';
+                    echo '<td>'.$row['Phone'].'</td>';
+                    echo '<td>'.$row['sex'].'</td>';
+                    echo '<td>'.$row['level'].'</td>';
+                    echo '<td><a href="editTeacher.php?id='.$row['teacherCode'].'"><img src="../Skins/Image/edit.gif" alt=""></a></td>';
+                    echo '<td><a href="deleteTeacher.php?id='.$row['teacherCode'].'"><img src="../Skins/Image/deleted.jpg" alt=""></a></td>';
+                    echo'</tr>';
+                    $i++;
+                    }
+                  }
+                  mysqli_close($conn);
+                  ?>
                 </tbody>
               </table>
             </div>
@@ -144,7 +70,7 @@
         </div>
          
       <?php
-        include("footer.php");
+        include("footer.php"); 
     ?>
     </div>
   
