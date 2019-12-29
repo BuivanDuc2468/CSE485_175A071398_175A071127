@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Sign UP</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,7 +13,7 @@
   <body>
   <div id="dangky">
 		<h1>ĐĂNG KÝ</h1>
-		<form action="register.php" method="POST" onsubmit="return check_dangky()">
+		<form action="registerStudent.php" method="POST" onsubmit="return check_dangky()">
 			<table>
 				<tr>
 					<td>Mã Sinh Viên</td>

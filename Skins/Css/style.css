@@ -397,3 +397,7 @@ img {
 	height: 50px;
 	overflow: hidden;
 }
+.submitEditStudent button{
+	padding: 5px 80px;
+
+}

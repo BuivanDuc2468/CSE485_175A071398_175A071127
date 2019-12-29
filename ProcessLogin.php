@@ -29,6 +29,8 @@
                         echo '<script language="javascript">';
                         echo 'alert("Tài khoản của bạn chưa được kích hoạt")';
                         echo '</script>';
+                        echo "<a href='login.php'> Click để về lại trang chủ</a>";
+			            exit();
                         
                     }
                 }
@@ -37,10 +39,10 @@
                 echo '<script language="javascript">';
                 echo 'alert("Mật Khẩu Sai")';
                 echo '</script>';
+                echo "<a href='login.php'> Click để về lại trang chủ</a>";
             }
         }
         else{
-
             echo header('Location: login.php');
         }
         mysqli_close($conn);
