@@ -1,4 +1,10 @@
-    <!-- Footer -->
+<?php
+
+if($_SESSION['role']!=1){
+	echo header('Location: ../login.php');
+  exit();
+}?>
+	<!-- Footer -->
     <footer role="contentinfo">
 	
     <div class="footer">
@@ -77,4 +83,9 @@
 
     <!-- End Footer -->		
         
-    </footer>
+	</footer>
+	
+
+	<p class="coppyright text-center">
+		© CoppyRight Bùi Văn Đức <a href="https://www.facebook.com/ducbv62">facebook</a>
+	</p>

@@ -1,3 +1,9 @@
+<?php
+session_start();
+if($_SESSION['role']!=1){
+  echo header('Location: ../login.php');
+  exit();
+}?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -51,7 +57,7 @@
                         echo '<tr>';
                         echo '<td>Password</td>';
                         echo '<td><input  class="inpbox" id="pass" type="text" name="pass" value=""></td>';
-                    echo '</tr>';
+                        echo '</tr>';
                         echo '<tr>';
                             echo '<td>Quyền</td>';
                             echo'<td>';

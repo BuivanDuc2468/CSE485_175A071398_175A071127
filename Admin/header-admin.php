@@ -1,3 +1,8 @@
+<?php
+if($_SESSION['role']!=1){
+	echo header('Location: ../login.php');
+  exit();
+}?>
 <header id="header" class="page-header">
 	<div class="container-fluid d-flex-wrap">
 		<div class="row">
@@ -22,13 +27,9 @@
 							
 							<li><a href="manageClass.php"><i class="fa fa-folder"></i>Lóp học</a></li>
 							
-							<li><a href="Postmanage.php"><i class="fa fa-th"></i>Bài Viết</a></li>
-							
-							<li><a href="class-assignment.php"><i class="fa fa-folder"></i>Phân công lớp</a></li>
+							<li><a href="manageclass-assignment.php"><i class="fa fa-folder"></i>Phân công lớp</a></li>
 							
 							<li><a href="#"><i class="fa fa-list-alt"></i>Lớp học - môn học</a></li>
-							
-							<li><a href="#"><i class="fa fa-th"></i>Lịch thi</a></li>
 							
 						</ul>
 					</li>
@@ -68,12 +69,12 @@
 								</a>
 							</li>
 							<li>
-								<a href="/CP/UserChangePass.aspx">
+								<a href="#">
 									<i class="icon-lock"></i>Đổi mật khẩu
 								</a>
 							</li>
 							<li>
-								<a href="../login.php">
+								<a href="../logout.php">
 									<i class="icon-key"></i>Thoát
 								</a>
 							</li>

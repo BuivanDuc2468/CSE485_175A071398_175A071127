@@ -32,50 +32,54 @@ if($_SESSION['role']!=1){
         <div class="main">
           <div class="content">
             <div id="content_Post">
-            <p class="text-center dsgv">Thêm Sinh Viên</p>
+            <p class="text-center dsgv">Thêm Giáo Viên</p>
             
 
               <?php
                  
                
-                    echo '<form action="ProcessAddStudent.php" method="POST">';
+                    echo '<form action="ProcessAddTeacher.php" method="POST">';
                       echo '<table>';
                         
                         
                         echo '<tr>';
-                            echo '<td>Tên người dùng</td>';
+                            echo '<td>Tên giáo viên</td>';
                             echo '<td><input  class="inpbox" id="name" type="text" name="name" value=""></td>';
                         echo '</tr>';
                         echo '<tr>';
-                            echo '<td>Email</td>';
-                            echo '<td><input  class="inpbox" id="Email" type="Email" name="Email" value=""></td>';
+                          echo '<td>Giới tính</td>';
+                          echo '<td>';
+                            echo'<select class="inpbox w-100" name="sex" id="class">';
+                                
+                              echo'<option value="Nam">Nam</option>';
+                              echo'<option value="Nữ">Nữ</option>';
+                             
+                            
+                            echo'</select>';
+                          echo'</td>';
                         echo '</tr>';
                         echo '<tr>';
                             echo '<td>Số Điện thoại</td>';
                             echo '<td><input  class="inpbox" id="phone" type="text" name="phone" value=""></td>';
                         echo '</tr>';
                         echo '<tr>';
-                        echo '<td>Password</td>';
-                        echo '<td><input  class="inpbox" id="pass" type="text" name="pass" value=""></td>';
+                        echo '<td>Ngày Sinh</td>';
+                        echo '<td><input  class="inpbox" id="birthday" type="text" name="birthday" value=""></td>';
                     echo '</tr>';
                         echo '<tr>';
-                            echo '<td>Quyền</td>';
+                            echo '<td>Trình độ</td>';
                             echo'<td>';
-                            echo'<select class="inpbox w-100" name="roleID" id="class">';
-                              $sql3 = "Select * from role";
-                              $result3 = mysqli_query($conn,$sql3);
-                              if(mysqli_num_rows($result3)>0){
-                                  while($row3 = mysqli_fetch_assoc($result3)){
-                                      echo'<option value="'.$row3['roleId'].'">'.$row3['roleName'].'</option>';
-                              }
-                              }
+                            echo'<select class="inpbox" name="level" id="class">';
+                              
+                              echo'<option value="Thạc Sĩ">Thạc Sĩ</option>';
+                              echo'<option value="Tiến Sĩ">Tiến Sĩ</option>';
+                              echo'<option value="Đại Học">Đại Học</option>';
+                              echo'<option value="Giáo Sư">Giáo Sư</option>';
+                              
                             echo'</select>';
                           echo '</td>';
                         echo '</tr>';
-                        echo '<tr>';
-                            echo '<td>Activity</td>';
-                            echo '<td><input  class="inpbox" id="name" type="checkbox" name="activity" value="1"></td>';
-                        echo '</tr>';
+                       
                         echo'<tr class="w-100 submitEditStudent">';
                             echo'<td colspan="2" style="text-align: center"><button type="submit">Thêm</button></td>';
                         echo'</tr>';

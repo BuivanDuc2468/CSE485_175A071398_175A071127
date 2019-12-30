@@ -1,3 +1,9 @@
+<?php
+session_start();
+if($_SESSION['role']!=1){
+  echo header('Location: ../login.php');
+  exit();
+}?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -53,7 +59,7 @@
                           echo'<td>'.$row['ClassID'].'</td>';
                           echo '<td>'.$row['ClassName'].'</td>';
                           echo '<td>'.$row['teacherName'].'</td>';
-                          echo '<td><a href="editClass.php?id='.$row['ClassID'].'"><img src="../Skins/Image/edit.gif" alt=""></a></td>';
+                          echo '<td><a href="#"><img src="../Skins/Image/edit.gif" alt=""></a></td>';
                           echo '<td><a href="deleteClass.php?id='.$row['ClassID'].'"><img src="../Skins/Image/deleted.jpg" alt=""></a></td>';
                           echo'</tr>';
 

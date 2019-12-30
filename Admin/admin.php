@@ -1,10 +1,9 @@
 <?php
 session_start();
-if($_SESSION['role']!=1){
-  echo header('Location: ../Login.php');
+if(($_SESSION['role']!=1)){
+  echo header('Location: ../login.php');
+  exit();
 }
-
-
 ?>
 <!doctype html>
 <html lang="en">
@@ -34,8 +33,8 @@ if($_SESSION['role']!=1){
          
       <?php
         include("footer.php");
-    ?>
-    </div>
+     ?>
+ 
   
         
     <!-- Optional JavaScript -->

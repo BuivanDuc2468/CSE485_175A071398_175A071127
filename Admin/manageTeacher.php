@@ -1,3 +1,9 @@
+<?php
+session_start();
+if($_SESSION['role']!=1){
+  echo header('Location: ../login.php');
+  exit();
+}?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -30,6 +36,7 @@
           <div class="content">
             <div id="content_Post">
             <p class="text-center dsgv">Danh sách giáo Viên</p>
+            <p class="text-center dsgv"><a href="addTeacher.php">Thêm giáo viên</a></p>
               <table class="table table-bordered">
                 <thead>
                   <tr>

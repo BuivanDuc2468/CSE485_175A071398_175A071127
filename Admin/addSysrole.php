@@ -1,3 +1,9 @@
+<?php
+session_start();
+if($_SESSION['role']!=1){
+  echo header('Location: ../login.php');
+  exit();
+}?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -34,12 +40,12 @@
                         
                         
                         echo '<tr>';
-                            echo '<td>Tên quyền</td>';
+                            echo '<td>Nhóm quyền</td>';
                             echo '<td><input  class="inpbox" id="name" type="text" name="name" value=""></td>';
                         echo '</tr>';
                         
                         echo'<tr class="w-100 submitEditStudent">';
-                            echo'<td colspan="2" style="text-align: center"><button type="submit">Lưu</button></td>';
+                            echo'<td colspan="2" style="text-align: center"><button type="submit">Thêm</button></td>';
                         echo'</tr>';
                         echo'</table>';
                         echo'</form>';

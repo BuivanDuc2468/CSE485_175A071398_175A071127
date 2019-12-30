@@ -1,3 +1,4 @@
+
 <?php
         
         $email = trim($_POST['email']);
@@ -14,7 +15,7 @@
             { 
                 session_start();
                 $_SESSION['name'] = $row['name'];
-                $_SESSION['role'] = $row['roleId'];
+                $_SESSION['role'] = (int)$row['roleId'];
                 $_SESSION['activity'] = $row['activity'];
                 
                 if($_SESSION['role']==1){
@@ -22,7 +23,7 @@
                 }
                 else if($_SESSION['role']==2){
                     if($_SESSION['activity']==1){
-                        echo header('Location: Admin/class-assignment.php');
+                        echo header('Location: Admin/Diemdanh.php');
                     }
                     else{
                         echo header('Location: login.php');
@@ -34,12 +35,12 @@
                         
                     }
                 }
+                else{
+
+                }
             }
             else{
-                echo '<script language="javascript">';
-                echo 'alert("Mật Khẩu Sai")';
-                echo '</script>';
-                echo "<a href='login.php'> Click để về lại trang chủ</a>";
+                
             }
         }
         else{

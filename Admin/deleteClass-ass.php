@@ -2,16 +2,11 @@
 session_start();
 if($_SESSION['role']!=1){
     echo header('Location: ../login.php');
-  exit();
 }?>
 <?php
-
-    $teacher=$_POST['teacher'];
-    $class=$_POST['class'];
-    $subject=$_POST['subject'];
-    
+    $getID = $_GET['id'];
     require('../Connect.php');
-    $sql = "INSERT INTO teacher_subject_class(teacher_ID,SubjectID,ClassID) values ('$teacher','$subject','$class');";
+    $sql = "Delete From teacher_subject_class where ID = '$getID'";
     mysqli_set_charset($conn,'UTF8');
     if(mysqli_query($conn,$sql)){
         header("Location:manageclass-assignment.php");

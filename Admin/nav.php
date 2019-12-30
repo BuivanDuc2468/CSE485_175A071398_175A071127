@@ -1,4 +1,9 @@
 
+<?php
+if($_SESSION['role']!=1){
+    echo header('Location: ../login.php');
+  exit();
+}?>
 <div class="clear"></div>
 <div class="row">
     <div class="col-lg-3 col-md-3 col-sm-6 col-12">
@@ -67,7 +72,7 @@
             <div class="details">
                 <div class="number">Phân Lớp</div>
             </div>
-            <a href="/CP/SysPage/Index.aspx" class="more">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
+            <a href="manageclass-assignment.php" class="more">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
     <div class="col-lg-3 col-md-3 col-sm-6 col-12">
@@ -89,7 +94,7 @@
             <div class="details">
                 <div class="number">Tài nguyên</div>
             </div>
-            <a href="/CP/SysResource/Index.aspx" class="more">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
+            <a href="#" class="more">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
 </div>

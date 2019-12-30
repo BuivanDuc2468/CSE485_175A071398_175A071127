@@ -1,3 +1,9 @@
+<?php
+session_start();
+if($_SESSION['role']!=1){
+  echo header('Location: ../login.php');
+  exit();
+}?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -32,6 +38,7 @@
             <!-- =================teacher=========== -->
             <div id="content-teacher">
             <p class="text-center dsgv">User</p>
+            <p class="text-center dsgv"><a href="addUsers.php">Thêm</a></p>
               <table class="table table-bordered">
                 <thead>
                   <tr>
@@ -70,7 +77,7 @@
                   ?>
                 </tbody>
               </table>
-              <p class="text-center dsgv"><a href="addUsers.php">Thêm</a></p>
+              
             </div>
           </div>
         </div>

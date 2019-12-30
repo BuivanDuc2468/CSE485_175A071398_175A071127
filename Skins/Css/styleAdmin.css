@@ -894,7 +894,7 @@ li [class^="fa-"], li [class^="glyphicon-"], li [class^="icon-"], li [class*=" f
 }
 
 .page-header {
-    background-color: #ec2d2d;
+    background-color: #9f9da2;
     margin: 2px 0 0
 }
 
@@ -1406,7 +1406,12 @@ li [class^="fa-"], li [class^="glyphicon-"], li [class^="icon-"], li [class*=" f
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0)
     }
-
+    p.coppyright.text-center {
+        background: #dea3dc;
+        font-size: 19px;
+        width: 100%;
+        padding: 9px 0;
+    }
 .sidebar-fixed-left, .sidebar-stacked {
     position: fixed;
     top: 0;

@@ -2,15 +2,18 @@
 session_start();
 if($_SESSION['role']!=1){
     echo header('Location: ../login.php');
-  exit();
+    exit();
 }?>
 <?php
-    $getID = $_GET['id'];
+    $getID = $_POST['id'];
+    $name=$_POST['name'];
+    
     require('../Connect.php');
-    $sql = "Delete From users where userId = '$getID'";
+    $sql = "UPDATE subject SET nameSubject = '$name' where SubjectID = '$getID'";
     mysqli_set_charset($conn,'UTF8');
     if(mysqli_query($conn,$sql)){
-        header("Location:SysUser.php");
+        echo'Thanh cong';
+        header("Location:manageSubject.php");
     };
     mysqli_close($conn);
 ?>

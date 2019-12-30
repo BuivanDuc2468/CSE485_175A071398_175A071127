@@ -5,12 +5,14 @@ if($_SESSION['role']!=1){
   exit();
 }?>
 <?php
-    $getID = $_GET['id'];
+    
+    $name=$_POST['name'];
+    
     require('../Connect.php');
-    $sql = "Delete From users where userId = '$getID'";
+    $sql = "INSERT INTO subject(nameSubject) values ('$name');";
     mysqli_set_charset($conn,'UTF8');
     if(mysqli_query($conn,$sql)){
-        header("Location:SysUser.php");
-    };
+        header("Location:manageSubject.php");
+    }
     mysqli_close($conn);
 ?>

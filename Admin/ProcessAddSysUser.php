@@ -1,4 +1,10 @@
 <?php
+session_start();
+if($_SESSION['role']!=1){
+    echo header('Location: ../login.php');
+  exit();
+}?>
+<?php
     $roleID = $_POST['roleID'];
     $name=$_POST['name'];
     $email =$_POST['Email'];

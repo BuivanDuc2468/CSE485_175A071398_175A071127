@@ -1,3 +1,9 @@
+<?php
+session_start();
+if($_SESSION['role']!=1){
+  echo header('Location: ../login.php');
+  exit();
+}?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -27,7 +33,8 @@
             <!-- =================teacher=========== -->
             <div id="content-teacher">
             
-                <p class="text-center dsgv">Group User</p>
+                <p class="text-center dsgv">Nhóm quyền</p>
+                <p class="text-center dsgv"><a href="addSysrole.php">Thêm</a></p>
                 
                 <?php
                     require("../Connect.php");
@@ -74,7 +81,7 @@
 
              
               
-                    <p class="text-center dsgv"><a href="addSysrole.php">Thêm</a></p>
+                    
                
              
             </div>

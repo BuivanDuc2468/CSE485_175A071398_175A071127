@@ -1,4 +1,10 @@
 <?php
+session_start();
+if($_SESSION['role']!=1){
+    echo header('Location: ../login.php');
+    exit();
+}?>
+<?php
     $getID = $_POST['roleId'];
     $name=$_POST['name'];
     

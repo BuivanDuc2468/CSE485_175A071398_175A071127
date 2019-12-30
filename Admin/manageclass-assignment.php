@@ -1,3 +1,9 @@
+<?php
+session_start();
+if($_SESSION['role']!=1){
+  echo header('Location: ../login.php');
+  exit();
+}?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -32,14 +38,14 @@
             <!-- =================teacher=========== -->
             <div id="content-teacher">
                 <p class="text-center dsgv">Phân Công giảng dạy</p>
+                <p class="text-center dsgv"><a href="addClass-assignment.php">Thêm</a></p>
                 <table class="table table-bordered">
                     <thead>
                     <tr>
                         <th scope="col" width="30">ID</th>
-                        <th scope="col" >Giáo Viên</th>
                         <th scope="col" >Tên lớp</th>
+                        <th scope="col" >Giáo Viên</th>
                         <th scope="col">Môn Học</th>
-                        <th scope="col" width="30">Sửa</th>
                         <th scope="col" width="30">Xóa</th>
                     </tr>
                     </thead>
@@ -53,8 +59,7 @@
                             echo '<td>'.$row['ClassName'].'</td>';
                             echo '<td>'.$row['teacherName'].'</td>';
                             echo '<td>'.$row['nameSubject'].'</td>';
-                            echo '<td><a href="editClass.php?id='.$row['ID'].'"><img src="../Skins/Image/edit.gif" alt=""></a></td>';
-                            echo '<td><a href="deleteClass.php?id='.$row['ID'].'"><img src="../Skins/Image/deleted.jpg" alt=""></a></td>';
+                            echo '<td><a href="deleteClass-ass.php?id='.$row['ID'].'"><img src="../Skins/Image/deleted.jpg" alt=""></a></td>';
                             echo'</tr>';
                         }
                     }
@@ -62,7 +67,7 @@
                     ?>
                     </tbody>
                 </table>
-                <p class="text-center dsgv"><a href="addClass-assignment.php">Thêm</a></p>
+                
             </div>
            
 

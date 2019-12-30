@@ -1,3 +1,9 @@
+<?php
+session_start();
+if($_SESSION['role']!=1){
+  echo header('Location: ../login.php');
+  exit();
+}?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -19,7 +25,13 @@
     <div class="admin">
 
     <div class="container">
-   
+    <?php
+      require("../Connect.php");
+      $sql = "Select * from users,role where userId = '1' and users.roleId = role.roleId";
+      mysqli_set_charset($conn,'UTF8');
+      $result = mysqli_query($conn,$sql);
+     
+    ?>
       
        </div>
         <div class="main">
@@ -32,23 +44,26 @@
                   <tr>
                     <th scope="col">ID</th>
                     <th scope="col">Tên người dùng</th>
+                    <th scope="col">Nhóm người dùng</th>
                     <th scope="col" width="270">Email</th>
                     <th scope="col" width="200">Số điện thoại</th>
-                    <th scope="col" width="130">Sửa</th>
-                    <th scope="col" width="130">Xóa</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Bùi Văn Đức</td>
-                    <td>bduc0248@gmail.com</td>
-                    <td>0963798280</td>
-                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
-                    
-                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
-                    
-                  </tr>
+                  <?php
+
+                if(mysqli_num_rows($result)>0){
+                  while($row = mysqli_fetch_assoc($result)){
+                    echo'<tr>';
+                      echo'<td>'.$row['userId'].'</td>';
+                      echo'<td>'.$row['name'].'</td>';
+                      echo'<td>'.$row['roleName'].'</td>';
+                      echo'<td>'.$row['Email'].'</td>';
+                      echo'<td>'.$row['Sdt'].'</td>';
+                    echo'</tr>';
+                  }
+                }
+                  ?>
                 </tbody>
               </table>
             </div>
