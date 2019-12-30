@@ -1358,7 +1358,9 @@ li [class^="fa-"], li [class^="glyphicon-"], li [class^="icon-"], li [class*=" f
         box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
         background-color: #bfbfbf
     }
-
+.dsgv a{
+    color: #157fda;
+}
     .sidebar .sidebar-toggle {
         cursor: pointer;
         position: absolute;

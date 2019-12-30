@@ -12,7 +12,12 @@
     <link rel="stylesheet" href="../Skins/Css/bootstrap.min.css">
   </head>
   <body>
-    
+  <?php
+      require("../Connect.php");
+      $sql = "Select * from users,role where role.roleId = users.roleId";
+      mysqli_set_charset($conn,'UTF8');
+      $result = mysqli_query($conn,$sql);
+    ?>
   <?php
         include 'header-admin.php';
     ?>
@@ -30,29 +35,42 @@
               <table class="table table-bordered">
                 <thead>
                   <tr>
+                    <th scope="col">STT</th>
                     <th scope="col">ID</th>
-                    <th scope="col">Tên người dùng</th>
+                    <th scope="col" width="200">Tên người dùng</th>
                     <th scope="col">Nhóm người dùng</th>
-                    <th scope="col" width="270">Email</th>
-                    <th scope="col" width="200">Số điện thoại</th>
-                    <th scope="col" width="130">Sửa</th>
-                    <th scope="col" width="130">Xóa</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Số điện thoại</th>
+                    <th scope="col" width="130">Activity</th>
+                    <th scope="col" width="100">Sửa</th>
+                    <th scope="col" width="100">Xóa</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Bùi Văn Đức</td>
-                    <td>Admin</td>
-                    <td>bduc0248@gmail.com</td>
-                    <td>0963798280</td>
-                    <td><a href=""><img src="../Skins/Image/edit.gif" alt=""></a></td>
-                    
-                    <td><a href=""><img src="../Skins/Image/deleted.jpg" alt=""></a></td>
-                    
-                  </tr>
+                <?php
+                  $i = 1;
+                  if(mysqli_num_rows($result)>0){
+                      while($row = mysqli_fetch_assoc($result)){
+                          echo '<tr>';
+                          echo'<th scope="row">'.$i.'</th>';
+                          echo'<td>'.$row['userId'].'</td>';
+                          echo '<td>'.$row['name'].'</td>';
+                          echo '<td>'.$row['roleName'].'</td>';
+                          echo '<td>'.$row['Email'].'</td>';
+                          echo '<td>'.$row['Sdt'].'</td>';
+                          echo '<td>'.$row['activity'].'</td>';
+                          echo '<td><a href="editUser.php?id='.$row['userId'].'"><img src="../Skins/Image/edit.gif" alt=""></a></td>';
+                          echo '<td><a href="deleteUser.php?id='.$row['userId'].'"><img src="../Skins/Image/deleted.jpg" alt=""></a></td>';
+                          echo'</tr>';
+
+                      $i++;
+                      }
+                    }
+                    mysqli_close($conn);
+                  ?>
                 </tbody>
               </table>
+              <p class="text-center dsgv"><a href="addUsers.php">Thêm</a></p>
             </div>
           </div>
         </div>

@@ -12,62 +12,53 @@
     <link rel="stylesheet" href="../Skins/Css/bootstrap.min.css">
   </head>
   <body>
-    <?php
-        include 'header-admin.php';
-    ?>
-    <?php
+  <?php
       require("../Connect.php");
-      $sql = "Select * from Student,ClassOne where ClassOne.ClassID = Student.ClassID";
+      $sql = "Select * from teacher";
       mysqli_set_charset($conn,'UTF8');
       $result = mysqli_query($conn,$sql);
     ?>
-      
+    <?php
+        include 'header-admin.php';
+    ?>
     <div class="admin">
     <div class="container">
+    
+      
        </div>
         <div class="main">
           <div class="content">
-            <!-- =================teacher=========== -->
-            <div id="content-teacher">
-            
-            <p class="text-center dsgv">Danh sách sinh viên</p>
-            <p class="text-center dsgv"><a href="addStudent.php">Thêm sinh viên</a></p>
+            <div id="content_Post">
+            <p class="text-center dsgv">Danh sách giáo Viên</p>
               <table class="table table-bordered">
                 <thead>
                   <tr>
                     <th scope="col" width="30">STT</th>
-                    <th scope="col" width="200">MSV</th>
-                    <th scope="col" width="250">Họ tên</th>
-                    <th scope="col" width="200">Giới tính</th>
+                    <th scope="col">Mã Giáo Viên</th>
+                    <th scope="col">Tên Giáo Viên</th>
                     <th scope="col">Số điện thoại</th>
-                    <th scope="col">Lớp</th>
-                    <th scope="col" width="30">Sửa</th>
-                    <th scope="col" width="30">Xóa</th>
+                    <th scope="col">Giới tính</th>
+                    <th scope="col">Trình độ</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <?php
+                <?php
                   $i =1;
                   if(mysqli_num_rows($result)>0){
                       while($row = mysqli_fetch_assoc($result)){
                     echo '<tr>';
                     echo '<th scope="row">'.$i.'</th>';
-                    echo '<td>'.$row['StudentCode'].'</td>';
-                    echo '<td>'.$row['name'].'</td>';
+                    echo '<td>'.$row['teacherCode'].'</td>';
+                    echo '<td>'.$row['teacherName'].'</td>';
+                    echo '<td>'.$row['Phone'].'</td>';
                     echo '<td>'.$row['sex'].'</td>';
-                    echo '<td>'.$row['phone'].'</td>';
-                    echo '<td>'.$row['ClassName'].'</td>';
-                    echo '<td><a href="editStudent.php?id='.$row['StudentCode'].'"><img src="../Skins/Image/edit.gif" alt=""></a></td>';
-                    echo '<td><a href="deleteStudent.php?id='.$row['StudentCode'].'"><img src="../Skins/Image/deleted.jpg" alt=""></a></td>';
+                    echo '<td>'.$row['level'].'</td>';
                     echo'</tr>';
                     $i++;
                     }
                   }
-
                   mysqli_close($conn);
                   ?>
-                  
-                  
                 </tbody>
               </table>
             </div>
@@ -75,7 +66,7 @@
         </div>
          
       <?php
-        include("footer.php");
+        include("footer.php"); 
     ?>
     </div>
   

@@ -12,65 +12,56 @@
     <link rel="stylesheet" href="../Skins/Css/bootstrap.min.css">
   </head>
   <body>
-    <?php
+    
+  <?php
         include 'header-admin.php';
     ?>
+    <div class="admin">
+
+    <div class="container">
     <?php
       require("../Connect.php");
-      $sql = "Select * from Student,ClassOne where ClassOne.ClassID = Student.ClassID";
+      $sql = "Select * from classone,teacher where ClassOne.homeroomTeacher = teacher.teacherCode";
       mysqli_set_charset($conn,'UTF8');
       $result = mysqli_query($conn,$sql);
     ?>
       
-    <div class="admin">
-    <div class="container">
        </div>
         <div class="main">
           <div class="content">
             <!-- =================teacher=========== -->
             <div id="content-teacher">
-            
-            <p class="text-center dsgv">Danh sách sinh viên</p>
-            <p class="text-center dsgv"><a href="addStudent.php">Thêm sinh viên</a></p>
+            <p class="text-center dsgv">Danh sách Lớp học</p>
               <table class="table table-bordered">
                 <thead>
                   <tr>
                     <th scope="col" width="30">STT</th>
-                    <th scope="col" width="200">MSV</th>
-                    <th scope="col" width="250">Họ tên</th>
-                    <th scope="col" width="200">Giới tính</th>
-                    <th scope="col">Số điện thoại</th>
-                    <th scope="col">Lớp</th>
-                    <th scope="col" width="30">Sửa</th>
-                    <th scope="col" width="30">Xóa</th>
-                  </tr>
+                    <th scope="col" width="170">Mã lớp</th>
+                    <th scope="col" width="170">Tên lớp</th>
+                    <th scope="col">Giáo Viên Chủ nhiệm</th>
                 </thead>
                 <tbody>
-                  <?php
+                <?php
                   $i =1;
                   if(mysqli_num_rows($result)>0){
                       while($row = mysqli_fetch_assoc($result)){
-                    echo '<tr>';
-                    echo '<th scope="row">'.$i.'</th>';
-                    echo '<td>'.$row['StudentCode'].'</td>';
-                    echo '<td>'.$row['name'].'</td>';
-                    echo '<td>'.$row['sex'].'</td>';
-                    echo '<td>'.$row['phone'].'</td>';
-                    echo '<td>'.$row['ClassName'].'</td>';
-                    echo '<td><a href="editStudent.php?id='.$row['StudentCode'].'"><img src="../Skins/Image/edit.gif" alt=""></a></td>';
-                    echo '<td><a href="deleteStudent.php?id='.$row['StudentCode'].'"><img src="../Skins/Image/deleted.jpg" alt=""></a></td>';
-                    echo'</tr>';
-                    $i++;
-                    }
-                  }
+                          echo '<tr>';
+                          echo'<th scope="row">'.$i.'</th>';
+                          echo'<td>'.$row['ClassID'].'</td>';
+                          echo '<td>'.$row['ClassName'].'</td>';
+                          echo '<td>'.$row['teacherName'].'</td>';
+                         echo'</tr>';
 
-                  mysqli_close($conn);
+                      $i++;
+                      }
+                    }
+                    mysqli_close($conn);
                   ?>
-                  
-                  
                 </tbody>
               </table>
             </div>
+           
+
           </div>
         </div>
          

@@ -1,5 +1,4 @@
 <?php
-$hashed_passcode = md5('admin');
-echo $hashed_passcode;
-
+$password = password_hash('');
+echo $password;
 ?>

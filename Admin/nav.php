@@ -56,7 +56,7 @@
             <div class="details">
                 <div class="number">Môn học</div>
             </div>
-            <a href="/CP/SysMenu/Index.aspx" class="more">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
+            <a href="manageSubject.php" class="more">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
     <div class="col-lg-3 col-md-3 col-sm-6 col-12">

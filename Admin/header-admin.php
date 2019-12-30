@@ -26,9 +26,9 @@
 							
 							<li><a href="class-assignment.php"><i class="fa fa-folder"></i>Phân công lớp</a></li>
 							
-							<li><a href="/CP/ModNews/Index.aspx"><i class="fa fa-list-alt"></i>Lớp học - môn học</a></li>
+							<li><a href="#"><i class="fa fa-list-alt"></i>Lớp học - môn học</a></li>
 							
-							<li><a href="/CP/ModComment/Index.aspx"><i class="fa fa-th"></i>Lịch thi</a></li>
+							<li><a href="#"><i class="fa fa-th"></i>Lịch thi</a></li>
 							
 						</ul>
 					</li>
@@ -36,9 +36,9 @@
 						<a class="a-open-down"></a>
 						<a href="javascript:;">Thống kê<i class="fa fa-angle-down"></i></a>
 						<ul class="sub-menu">
-							<li><a href="/CP/ModSubscribe/Index.aspx"><i class="fa fa-th" aria-hidden="true"></i>Danh sách Giáo viên</a></li>
-							<li><a href="/CP/ModSubscribe2/Index.aspx"><i class="fa fa-eye" aria-hidden="true"></i>Danh sách lớp học</a></li>
-							<li><a href="/CP/ModSubscribe3/Index.aspx"><i class="fa fa-eye" aria-hidden="true"></i>Danh sách môn học</a></li>
+							<li><a href="ListTeacher.php"><i class="fa fa-th" aria-hidden="true"></i>Danh sách Giáo viên</a></li>
+							<li><a href="ListClass.php"><i class="fa fa-eye" aria-hidden="true"></i>Danh sách lớp học</a></li>
+							<li><a href="ListSubject.php"><i class="fa fa-eye" aria-hidden="true"></i>Danh sách môn học</a></li>
 						</ul>
 					</li>
 					
@@ -46,8 +46,8 @@
 						<a class="a-open-down"></a>
 						<a href="javascript:;">Hệ thống <i class="fa fa-angle-down"></i></a>
 						<ul class="sub-menu">
-							<li><a href="/CP/SysRole/Index.aspx"><i class="fa fa-users"></i>Nhóm người sử dụng</a></li>
-							<li><a href="/CP/SysUser/Index.aspx"><i class="fa fa-user"></i>Người sử dụng</a></li>
+							<li><a href="SysRole.php"><i class="fa fa-users"></i>Nhóm người sử dụng</a></li>
+							<li><a href="SysUser.php"><i class="fa fa-user"></i>Người sử dụng</a></li>
 							
 						</ul>
 					</li>
