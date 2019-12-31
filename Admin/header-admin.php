@@ -1,6 +1,6 @@
 <?php
 if($_SESSION['role']!=1){
-	echo header('Location: ../login.php');
+	echo header('Location: ../index.php');
   exit();
 }?>
 <header id="header" class="page-header">

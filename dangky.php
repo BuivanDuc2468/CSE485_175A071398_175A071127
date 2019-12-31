@@ -1,3 +1,7 @@
+<?php 
+   session_start(); 
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -11,6 +15,10 @@
     <link rel="stylesheet" href="skins/Css/bootstrap.min.css">
   </head>
   <body>
+	  <?php
+	  if(isset($_SESSION['email']))
+	  { 
+	  ?>
   <div id="dangky">
 		<h1>ĐĂNG KÝ</h1>
 		<form action="registerStudent.php" method="POST" onsubmit="return check_dangky()">
@@ -79,6 +87,11 @@
 			</table>
 		</form>
 	</div>
+	  <?php }
+	  else {
+		header("location: index.php");
+	  }
+	  ?>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -43,7 +43,7 @@
 					
 					<input type="submit" value="Đăng Ký">
 				</form>
-				<p>Bạn đã có tài khoản? <a href="login.php"> Đăng nhập ngay!</a></p>
+				<p>Bạn đã có tài khoản? <a href="index.php"> Đăng nhập ngay!</a></p>
 			</div>
 		</div>
 		

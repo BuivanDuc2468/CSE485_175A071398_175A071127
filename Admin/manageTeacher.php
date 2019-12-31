@@ -1,7 +1,7 @@
 <?php
 session_start();
 if($_SESSION['role']!=1){
-  echo header('Location: ../login.php');
+  echo header('Location: ../index.php');
   exit();
 }?>
 <!doctype html>
@@ -35,7 +35,7 @@ if($_SESSION['role']!=1){
         <div class="main">
           <div class="content">
             <div id="content_Post">
-            <p class="text-center dsgv">Danh sách giáo Viên</p>
+            <p class="text-center dsgv">Danh sách Giáo viên</p>
             <p class="text-center dsgv"><a href="addTeacher.php">Thêm giáo viên</a></p>
               <table class="table table-bordered">
                 <thead>

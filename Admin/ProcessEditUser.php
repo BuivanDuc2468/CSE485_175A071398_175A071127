@@ -1,7 +1,8 @@
 <?php
 session_start();
 if($_SESSION['role']!=1){
-    echo header('Location: ../login.php');exit();
+    echo header('Location: ../index.php');
+    exit();
 }?>
 <?php
     $roleID1 = $_POST['roleId'];
