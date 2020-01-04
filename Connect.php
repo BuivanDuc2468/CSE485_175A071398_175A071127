@@ -1,5 +1,5 @@
 <?php
-     $conn = mysqli_connect('localhost','root','','175a071398_175a071127');
+     $conn = mysqli_connect('localhost','root','','cse485');
      if(!$conn){
          die('khong the ket noi');
      }

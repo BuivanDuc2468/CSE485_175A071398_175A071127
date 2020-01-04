@@ -12,7 +12,7 @@ if($_SESSION['role']!=1){
     $pass = $_POST['pass'];
     $password = password_hash($pass,PASSWORD_DEFAULT);
     $activity =$_POST['activity'];
-    require('../Connect.php');
+    require('../connect.php');
     $selectemail = "Select * from users where Email = '$email'";
     $result2 = mysqli_query($conn,$selectemail);
     if(!(mysqli_num_rows($result2)>0)){
@@ -21,16 +21,16 @@ if($_SESSION['role']!=1){
         mysqli_set_charset($conn,'UTF8');
         if(mysqli_query($conn,$sql)){
             echo'Thanh cong';
-            header("Location:SysUser.php");
+            header("Location:sysuser.php");
         };
     }
     else{
         echo "Email đã tồn tại";
         echo'<div class = "clear"</div>';
-        echo'<a href="addUsers.php">Nhấn để quay lại</a>';
+        echo'<a href="addusers.php">Nhấn để quay lại</a>';
         echo'<div class = "clear"</div>';
         
-        echo'<a href="SysUser.php">Nhấn để hủy</a>';
+        echo'<a href="sysuser.php">Nhấn để hủy</a>';
         
     }
     mysqli_close($conn);

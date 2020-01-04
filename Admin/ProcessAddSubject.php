@@ -8,11 +8,11 @@ if($_SESSION['role']!=1){
     
     $name=$_POST['name'];
     
-    require('../Connect.php');
-    $sql = "INSERT INTO subject(nameSubject) values ('$name');";
+    require('../connect.php');
+    $sql = "INSERT INTO subject(namesubject) values ('$name');";
     mysqli_set_charset($conn,'UTF8');
     if(mysqli_query($conn,$sql)){
-        header("Location:manageSubject.php");
+        header("Location:managesubject.php");
     }
     mysqli_close($conn);
 ?>

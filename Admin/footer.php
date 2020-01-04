@@ -16,9 +16,9 @@ if($_SESSION['role']!=1){
 			</h3>
 			</div>
 			<div class="col-md-6 text-right">
-				<a href="https://www.facebook.com/daihocthuyloi1959/?fref=ts" target="_blank"><img src="../Skins/Image/fb-icon.png" style="width:30px"></a>&nbsp;&nbsp;&nbsp;&nbsp; 
-				<a href="https://www.youtube.com/user/daihocthuyloi" target="_blank"><img src="../Skins/Image/ytb-icon.png" style="width:30px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="https://twitter.com/Daihocthuyloihn" target="_blank"><img src="../Skins/Image/twitter-icon.png" style="width:30px"></a>
+				<a href="https://www.facebook.com/daihocthuyloi1959/?fref=ts" target="_blank"><img src="../skins/image/fb-icon.png" style="width:30px"></a>&nbsp;&nbsp;&nbsp;&nbsp; 
+				<a href="https://www.youtube.com/user/daihocthuyloi" target="_blank"><img src="../skins/image/ytb-icon.png" style="width:30px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="https://twitter.com/Daihocthuyloihn" target="_blank"><img src="../skins/image/twitter-icon.png" style="width:30px"></a>
 			</div>
 		  </div>
         </div>

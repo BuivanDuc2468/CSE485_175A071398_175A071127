@@ -9,7 +9,7 @@ if($_SESSION['role']!=1){
 			<div class="col-md-1"></div>
 			<div class="logo col-md-3">
 				<a href="/">
-					<img src="../Skins/Image/logo.png" alt="">
+					<img src="../skins/image/logo.png" alt="">
 				</a>
 			</div>
 			<div class="hor-menu nav-desktop col-md-6">
@@ -21,11 +21,11 @@ if($_SESSION['role']!=1){
 						<a href="javascript:;">Quản lý <i class="fa fa-angle-down"></i></a>
 						<ul class="sub-menu">
 							
-							<li><a href="manageTeacher.php"><i class="fa fa-folder"></i>Giáo Viên</a></li>
+							<li><a href="manageteacher.php"><i class="fa fa-folder"></i>Giáo Viên</a></li>
 							
-							<li><a href="manageStudent.php"><i class="fa fa-folder"></i>Sinh Viên</a></li>
+							<li><a href="managestudent.php"><i class="fa fa-folder"></i>Sinh Viên</a></li>
 							
-							<li><a href="manageClass.php"><i class="fa fa-folder"></i>Lóp học</a></li>
+							<li><a href="manageclass.php"><i class="fa fa-folder"></i>Lóp học</a></li>
 							
 							<li><a href="manageclass-assignment.php"><i class="fa fa-folder"></i>Phân công lớp</a></li>
 							
@@ -37,9 +37,9 @@ if($_SESSION['role']!=1){
 						<a class="a-open-down"></a>
 						<a href="javascript:;">Thống kê<i class="fa fa-angle-down"></i></a>
 						<ul class="sub-menu">
-							<li><a href="ListTeacher.php"><i class="fa fa-th" aria-hidden="true"></i>Danh sách Giáo viên</a></li>
-							<li><a href="ListClass.php"><i class="fa fa-eye" aria-hidden="true"></i>Danh sách lớp học</a></li>
-							<li><a href="ListSubject.php"><i class="fa fa-eye" aria-hidden="true"></i>Danh sách môn học</a></li>
+							<li><a href="listteacher.php"><i class="fa fa-th" aria-hidden="true"></i>Danh sách Giáo viên</a></li>
+							<li><a href="listclass.php"><i class="fa fa-eye" aria-hidden="true"></i>Danh sách lớp học</a></li>
+							<li><a href="listsubject.php"><i class="fa fa-eye" aria-hidden="true"></i>Danh sách môn học</a></li>
 						</ul>
 					</li>
 					
@@ -47,8 +47,8 @@ if($_SESSION['role']!=1){
 						<a class="a-open-down"></a>
 						<a href="javascript:;">Hệ thống <i class="fa fa-angle-down"></i></a>
 						<ul class="sub-menu">
-							<li><a href="SysRole.php"><i class="fa fa-users"></i>Nhóm người sử dụng</a></li>
-							<li><a href="SysUser.php"><i class="fa fa-user"></i>Người sử dụng</a></li>
+							<li><a href="sysrole.php"><i class="fa fa-users"></i>Nhóm người sử dụng</a></li>
+							<li><a href="sysuser.php"><i class="fa fa-user"></i>Người sử dụng</a></li>
 							
 						</ul>
 					</li>
@@ -64,7 +64,7 @@ if($_SESSION['role']!=1){
 						<ul class="dropdown-menu">
 							
 							<li>
-								<a href="InfoUser.php?ID=1">
+								<a href="infouser.php?id=1">
 									<i class="icon-user"></i>Thông tin tài khoản
 								</a>
 							</li>

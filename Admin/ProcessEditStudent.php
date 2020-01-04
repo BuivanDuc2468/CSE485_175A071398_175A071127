@@ -10,12 +10,12 @@ if($_SESSION['role']!=1){
     $sex =$_POST['sex'];
     $phone = $_POST['phone'];
     $classId = $_POST['class'];
-    require('../Connect.php');
+    require('../connect.php');
     $sql = "UPDATE student SET name = '$name', sex = '$sex' , phone = '$phone' , ClassID = '$classId'  where StudentCode = '$getID'";
     mysqli_set_charset($conn,'UTF8');
     if(mysqli_query($conn,$sql)){
         echo'Thanh cong';
-        header("Location:manageStudent.php");
+        header("Location:managestudent.php");
     };
     mysqli_close($conn);
 ?>

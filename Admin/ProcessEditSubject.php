@@ -8,12 +8,12 @@ if($_SESSION['role']!=1){
     $getID = $_POST['id'];
     $name=$_POST['name'];
     
-    require('../Connect.php');
+    require('../connect.php');
     $sql = "UPDATE subject SET nameSubject = '$name' where SubjectID = '$getID'";
     mysqli_set_charset($conn,'UTF8');
     if(mysqli_query($conn,$sql)){
         echo'Thanh cong';
-        header("Location:manageSubject.php");
+        header("Location:managesubject.php");
     };
     mysqli_close($conn);
 ?>

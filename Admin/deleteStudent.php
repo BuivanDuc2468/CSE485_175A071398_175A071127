@@ -5,11 +5,11 @@ if($_SESSION['role']!=1){
 }?>
 <?php
     $getID = $_GET['id'];
-    require('../Connect.php');
+    require('../connect.php');
     $sql = "Delete From Student where StudentCode = '$getID'";
     mysqli_set_charset($conn,'UTF8');
     if(mysqli_query($conn,$sql)){
-        header("Location:manageStudent.php");
+        header("Location:managestudent.php");
     };
     mysqli_close($conn);
 ?>

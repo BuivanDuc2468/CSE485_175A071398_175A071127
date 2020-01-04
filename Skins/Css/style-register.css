@@ -762,4 +762,13 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
       padding: 1em 0 0;
     }
   }
+  .btn_dangkyUser{
+    width: 100%;
+      padding: 9px;
+      background: #6c9c52;
+      margin-top: 10px;
+      font-size: 23px;
+      color: #2e137d;
+      margin-bottom: 16px;
   
+  }

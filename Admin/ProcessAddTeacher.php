@@ -10,7 +10,7 @@ if($_SESSION['role']!=1){
     $phone = $_POST['phone'];
     $birthday = $_POST['birthday'];
     $level = $_POST['level'];
-    require('../Connect.php');
+    require('../connect.php');
     $selectemail = "Select * from teacher where teacherName = '$name' and sex = '$sex' and Phone = '$phone' and birthDay = '$birthday'";
     $result2 = mysqli_query($conn,$selectemail);
     if(!(mysqli_num_rows($result2)>0)){
@@ -19,16 +19,16 @@ if($_SESSION['role']!=1){
         mysqli_set_charset($conn,'UTF8');
         if(mysqli_query($conn,$sql)){
             echo'Thanh cong';
-            header("Location:manageTeacher.php");
+            header("Location:manageteacher.php");
         };
     }
     else{
         echo "Giáo Viên này đã tồn tại";
         echo'<div class = "clear"</div>';
-        echo'<a href="addTeacher.php">Nhấn để quay lại</a>';
+        echo'<a href="addteacher.php">Nhấn để quay lại</a>';
         echo'<div class = "clear"</div>';
         
-        echo'<a href="manageTeacher.php">Nhấn để hủy</a>';
+        echo'<a href="manageteacher.php">Nhấn để hủy</a>';
         
     }
     mysqli_close($conn);

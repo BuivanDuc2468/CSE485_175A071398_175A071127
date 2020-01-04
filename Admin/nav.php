@@ -14,7 +14,7 @@ if($_SESSION['role']!=1){
             <div class="details">
                 <div class="number">Giáo Viên</div>
             </div>
-            <a href="manageTeacher.php" class="more" id="qlgv">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
+            <a href="manageteacher.php" class="more" id="qlgv">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
     <div class="col-lg-3 col-md-3 col-sm-6 col-12">
@@ -25,10 +25,10 @@ if($_SESSION['role']!=1){
             <div class="details">
                 <div class="number">Sinh Viên</div>
             </div>
-            <a href="manageStudent.php" class="more" id="qlsv">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
+            <a href="managestudent.php" class="more" id="qlsv">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
-    <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+    <!-- <div class="col-lg-3 col-md-3 col-sm-6 col-12">
         <div class="dashboard-stat purple-plum">
             <div class="visual">
                 <i class="fa fa-list-alt"></i>
@@ -36,9 +36,9 @@ if($_SESSION['role']!=1){
             <div class="details">
                 <div class="number">Bài Viết</div>
             </div>
-            <a href="Postmanage.php" class="more" id="qlpst">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
+            <a href="#" class="more" id="qlpst">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
         </div>
-    </div>
+    </div> -->
     <div class="col-lg-3 col-md-3 col-sm-6 col-12">
         <div class="dashboard-stat green-haze">
             <div class="visual">
@@ -47,7 +47,7 @@ if($_SESSION['role']!=1){
             <div class="details">
                 <div class="number">Lớp Học</div>
             </div>
-            <a href="manageClass.php" class="more" id="qlcls">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
+            <a href="manageclass.php" class="more" id="qlcls">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
 </div>
@@ -61,10 +61,10 @@ if($_SESSION['role']!=1){
             <div class="details">
                 <div class="number">Môn học</div>
             </div>
-            <a href="manageSubject.php" class="more">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
+            <a href="managesubject.php" class="more">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
-    <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+    <!-- <div class="col-lg-3 col-md-3 col-sm-6 col-12">
         <div class="dashboard-stat red-intense">
             <div class="visual">
                 <i class="fa fa-columns"></i>
@@ -74,7 +74,7 @@ if($_SESSION['role']!=1){
             </div>
             <a href="manageclass-assignment.php" class="more">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
         </div>
-    </div>
+    </div> -->
     <div class="col-lg-3 col-md-3 col-sm-6 col-12">
         <div class="dashboard-stat purple-plum">
             <div class="visual">
@@ -83,7 +83,7 @@ if($_SESSION['role']!=1){
             <div class="details">
                 <div class="number">Người sử dụng</div>
             </div>
-            <a href="SysUser.php" class="more">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
+            <a href="sysuser.php" class="more">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
     <div class="col-lg-3 col-md-3 col-sm-6 col-12">
@@ -92,9 +92,9 @@ if($_SESSION['role']!=1){
                 <i class="fa fa-globe"></i>
             </div>
             <div class="details">
-                <div class="number">Tài nguyên</div>
+                <div class="number">Hệ thống</div>
             </div>
-            <a href="#" class="more">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
+            <a href="diemdanh.php" class="more">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
 </div>

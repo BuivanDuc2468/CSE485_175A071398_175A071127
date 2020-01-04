@@ -14,14 +14,14 @@ if($_SESSION['role']!=1){
     $password = password_hash($pass,PASSWORD_DEFAULT);
     
     $activity =$_POST['activity'];
-    require('../Connect.php');
+    require('../connect.php');
     
         if(!($pass =="")){
             $sql = "UPDATE users set name = '$name',email = '$email',password = '$password',roleId = '$roleID1',Sdt = '$phone',activity = '$activity' where userId = '$id' ";
             mysqli_set_charset($conn,'UTF8');
             if(mysqli_query($conn,$sql)){
                 echo'Thanh cong';
-                header("Location:SysUser.php");
+                header("Location:sysuser.php");
             };
         }
         else{
@@ -29,7 +29,7 @@ if($_SESSION['role']!=1){
             mysqli_set_charset($conn,'UTF8');
             if(mysqli_query($conn,$sql)){
                 echo'Thanh cong';
-                header("Location:SysUser.php");
+                header("Location:sysuser.php");
             };
         }
     

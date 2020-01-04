@@ -6,11 +6,11 @@ if($_SESSION['role']!=1){
 }?>
 <?php
     $getID = $_GET['id'];
-    require('../Connect.php');
+    require('../connect.php');
     $sql = "Delete From subject where SubjectID = '$getID'";
     mysqli_set_charset($conn,'UTF8');
     if(mysqli_query($conn,$sql)){
-        header("Location:manageSubject.php");
+        header("Location:managesubject.php");
     };
     mysqli_close($conn);
 ?>

@@ -10,7 +10,7 @@ if($_SESSION['role']!=1){
     $phone = $_POST['phone'];
     $ClassID = $_POST['ClassID'];
     $StudentCode = $_POST['StudentCode'];
-    require('../Connect.php');
+    require('../connect.php');
     $selectStudentCode = "Select * from student where StudentCode = '$StudentCode' ";
     $result2 = mysqli_query($conn,$selectStudentCode);
     if(!(mysqli_num_rows($result2)>0)){
@@ -19,16 +19,16 @@ if($_SESSION['role']!=1){
         mysqli_set_charset($conn,'UTF8');
         if(mysqli_query($conn,$sql)){
             echo'Thanh cong';
-            header("Location:manageStudent.php");
+            header("Location:managestudent.php");
         };
     }
     else{
         echo "Mã sinh viên này đã tồn tại";
         echo'<div class = "clear"</div>';
-        echo'<a href="addStudent.php">Nhấn để quay lại</a>';
+        echo'<a href="addstudent.php">Nhấn để quay lại</a>';
         echo'<div class = "clear"</div>';
         
-        echo'<a href="manageStudent.php">Nhấn để hủy</a>';
+        echo'<a href="managestudent.php">Nhấn để hủy</a>';
         
     }
     mysqli_close($conn);
