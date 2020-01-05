@@ -37,7 +37,7 @@ if (isset($_POST['btnlogin'])) {
         }
         else{
             echo '<script language="javascript">';
-            echo 'alert("Sai Mật Khẩu")';
+            echo 'alert("Nhập sai Mật Khẩu")';
             echo '</script>';
             echo "<a href='index.php'> Click để về lại trang chủ</a>";
         }
