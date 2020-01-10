@@ -87,5 +87,5 @@ if($_SESSION['role']!=1){
 	
 
 	<p class="coppyright text-center">
-		© CoppyRight Bùi Văn Đức <a href="https://www.facebook.com/ducbv62">facebook</a>
+		© CoppyRight Bùi Văn Đức <a href="https://www.facebook.com/ducbv62" target="_blank">facebook</a>
 	</p>

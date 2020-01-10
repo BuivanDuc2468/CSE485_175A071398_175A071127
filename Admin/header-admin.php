@@ -29,8 +29,6 @@ if($_SESSION['role']!=1){
 							
 							<li><a href="manageclass-assignment.php"><i class="fa fa-folder"></i>Phân công lớp</a></li>
 							
-							<li><a href="#"><i class="fa fa-list-alt"></i>Lớp học - môn học</a></li>
-							
 						</ul>
 					</li>
 					<li class="item">

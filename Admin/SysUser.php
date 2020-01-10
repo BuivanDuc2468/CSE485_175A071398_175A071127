@@ -3,7 +3,7 @@ include("headerall.php");
 ?>
   <?php
       require("../Connect.php");
-      $sql = "Select * from users,role where role.roleId = users.roleId";
+      $sql = "Select * from users,role where role.roleId = users.roleId and userId>1";
       mysqli_set_charset($conn,'UTF8');
       $result = mysqli_query($conn,$sql);
     ?>
@@ -18,7 +18,7 @@ include("headerall.php");
           <div class="content">
             <!-- =================teacher=========== -->
             <div id="content-teacher">
-            <p class="text-center dsgv">User</p>
+            <p class="text-center dsgv">Users</p>
             <p class="text-center dsgv"><a href="addUsers.php">Thêm</a></p>
               <table class="table table-bordered">
                 <thead>
@@ -29,6 +29,7 @@ include("headerall.php");
                     <th scope="col">Nhóm người dùng</th>
                     <th scope="col">Email</th>
                     <th scope="col">Số điện thoại</th>
+                    <th scope="col">Mã Giáo Viên</th>
                     <th scope="col" width="130">Activity</th>
                     <th scope="col" width="100">Sửa</th>
                     <th scope="col" width="100">Xóa</th>
@@ -46,6 +47,7 @@ include("headerall.php");
                           echo '<td>'.$row['roleName'].'</td>';
                           echo '<td>'.$row['Email'].'</td>';
                           echo '<td>'.$row['Sdt'].'</td>';
+                          echo '<td>'.$row['teacherCode'].'</td>';
                           echo '<td>'.$row['activity'].'</td>';
                           echo '<td><a href="edituser.php?id='.$row['userId'].'"><img src="../skins/image/edit.gif" alt=""></a></td>';
                           echo '<td><a href="deleteuser.php?id='.$row['userId'].'"><img src="../skins/image/deleted.jpg" alt=""></a></td>';

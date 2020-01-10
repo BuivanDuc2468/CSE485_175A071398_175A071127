@@ -6,7 +6,7 @@ if($_SESSION['role']!=1){
 <?php
     $getID = $_GET['id'];
     require('../connect.php');
-    $sql = "Delete From teacher_subject_class where ID = '$getID'";
+    $sql = "Delete From tch_sub_class where ID = '$getID'";
     mysqli_set_charset($conn,'UTF8');
     if(mysqli_query($conn,$sql)){
         header("Location:manageclass-assignment.php");

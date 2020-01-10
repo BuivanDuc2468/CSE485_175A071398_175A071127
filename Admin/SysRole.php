@@ -31,7 +31,6 @@ include("headerall.php");
                             <th scope="col">ID</th>
                             <th scope="col">Nhóm người dùng</th>
                             <th scope="col" width="130">Sửa</th>
-                            <th scope="col" width="130">Xóa</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -46,7 +45,7 @@ include("headerall.php");
                                     echo'<td>'.$row['roleName'].'</td>';
                                     echo'<td><a href="editsysrole.php?id='.$row['roleId'].'"><img src="../skins/image/edit.gif" alt=""></a></td>';
                                     
-                                    echo'<td><a href="deletesysrole.php?id='.$row['roleId'].'"><img src="../skins/image/deleted.jpg" alt=""></a></td>';
+                                    //echo'<td><a href="deletesysrole.php?id='.$row['roleId'].'"><img src="../skins/image/deleted.jpg" alt=""></a></td>';
                                     echo'</tr>';
                                     $i++;
                                 }

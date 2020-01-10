@@ -28,17 +28,17 @@ if($_SESSION['role']!=1){
             <a href="managestudent.php" class="more" id="qlsv">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
-    <!-- <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-12">
         <div class="dashboard-stat purple-plum">
             <div class="visual">
                 <i class="fa fa-list-alt"></i>
             </div>
             <div class="details">
-                <div class="number">Bài Viết</div>
+                <div class="number">Đăng ký học</div>
             </div>
             <a href="#" class="more" id="qlpst">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
         </div>
-    </div> -->
+    </div>
     <div class="col-lg-3 col-md-3 col-sm-6 col-12">
         <div class="dashboard-stat green-haze">
             <div class="visual">
@@ -64,17 +64,17 @@ if($_SESSION['role']!=1){
             <a href="managesubject.php" class="more">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
-    <!-- <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-12">
         <div class="dashboard-stat red-intense">
             <div class="visual">
                 <i class="fa fa-columns"></i>
             </div>
             <div class="details">
-                <div class="number">Phân Lớp</div>
+                <div class="number">Phân Công Lớp</div>
             </div>
             <a href="manageclass-assignment.php" class="more">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
         </div>
-    </div> -->
+    </div>
     <div class="col-lg-3 col-md-3 col-sm-6 col-12">
         <div class="dashboard-stat purple-plum">
             <div class="visual">
@@ -94,7 +94,7 @@ if($_SESSION['role']!=1){
             <div class="details">
                 <div class="number">Hệ thống</div>
             </div>
-            <a href="diemdanh.php" class="more">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
+            <a href="#" class="more">Xem thêm<i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
 </div>

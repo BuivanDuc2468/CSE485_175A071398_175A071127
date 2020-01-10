@@ -138,3 +138,9 @@ js_window.scroll(function() {
     //})
 //})
 
+$("#checkall1").click(function(){
+    $('.checkbox1').not(this).prop('checked', this.checked);
+});
+$("#checkall").click(function(){
+    $('.checkbox2').not(this).prop('checked', this.checked);
+});

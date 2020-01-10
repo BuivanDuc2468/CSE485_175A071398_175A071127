@@ -6,7 +6,7 @@ include("headerall.php");
     <div class="container">
     <?php
       require("../connect.php");
-      $sql = "Select * from teacher_subject_class,teacher,subject,classone where teacher_subject_class.ClassID = classone.ClassID and teacher_subject_class.SubjectID = subject.SubjectID and teacher_subject_class.teacher_ID = teacher.teacherCode";
+      $sql = "Select * from tch_sub_class,teacher,subject,classone where tch_sub_class.ClassID = classone.ClassID and tch_sub_class.SubjectID = subject.SubjectID and tch_sub_class.teacherCode = teacher.teacherCode";
       mysqli_set_charset($conn,'UTF8');
       $result = mysqli_query($conn,$sql);
     ?>

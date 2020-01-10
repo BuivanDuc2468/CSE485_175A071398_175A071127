@@ -13,37 +13,33 @@ if (isset($_POST['btnlogin'])) {
     $result = mysqli_query($conn, $sql);
     if (mysqli_num_rows($result) == 1) {
         $row = mysqli_fetch_assoc($result);
-        if(password_verify($pass,$row['password'])) { 
+        if (password_verify($pass, $row['password'])) {
             $_SESSION['role'] = $row['roleId'];
-
+            
             if ($_SESSION['role'] == 1) {
                 header('Location: admin/admin.php');
-            } 
-            else if ($_SESSION['role'] == 2) {
-                if ($row['activity'] == 1) {
-                   header('Location: admin/diemdanh.php');
+            } else {
+                if ($row['activity'] == '1') {
+                    echo ('xin chào!');
+                    
+                    header('Location: admin/attent.php?id='.$row['teacherCode'].'');
+
                 } else {
-                   
                     echo '<script language="javascript">';
                     echo 'alert("Tài khoản của bạn chưa được kích hoạt")';
                     echo '</script>';
                     echo "<a href='index.php'> Click để về lại trang chủ</a>";
                     header('Location: index.php');
                 }
-            } 
-            else {
-                header('Location: index.php');
             }
-        }
-        else{
+        } else {
             echo '<script language="javascript">';
-            echo 'alert("Nhập sai Mật Khẩu")';
+            echo 'alert("Sai Mật Khẩu")';
             echo '</script>';
             echo "<a href='index.php'> Click để về lại trang chủ</a>";
         }
-    } 
-    else {
-        echo'Email sai';
+    } else {
+        echo 'Email sai';
         header('Location: index.php');
     }
     mysqli_close($conn);
